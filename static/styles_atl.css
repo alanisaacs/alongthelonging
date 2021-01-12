@@ -1,0 +1,49 @@
+/* ======= Styles for Along the Longing ======= */
+/* ======= Extending styles_all.css ======= */
+
+/* ======= Site Color Scheme ======= */
+
+:root {
+    --body-background-color: #f0fff0;
+    --main-title-color: #560875;
+    --nav-item-color: #10a50b;
+    --nav-item-hover-color: #ff6347;
+}
+
+/* ======= Site Background Color ======= */
+
+body {
+    /* Extend background color to entire canvas */
+    /* background-color: #ffff70; */
+    background-color: var(--body-background-color);
+}
+
+/* ======= Page Layout ======= */
+
+/* ======= Title and nav bar ======= */
+
+#main_title {
+    color: var(--main-title-color);
+}
+
+.nav_item a {
+    color: var(--nav-item-color);
+  }
+
+.nav_item a:hover {
+    color: var(--nav-item-hover-color);
+}
+
+/* ======= Subheaders ======= */
+
+/* extends styles_all.css */
+.bar_header {   
+    color: var(--main-title-color);
+}
+
+/* Home Page */
+
+.atl_home {
+    text-align: center;
+    margin: 100px;
+}
