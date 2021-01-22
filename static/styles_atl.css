@@ -47,3 +47,55 @@ body {
     text-align: center;
     margin: 100px;
 }
+
+/* Article Defaults */
+
+.article {
+    /* color is in styles_all.css */
+}
+
+.align-r {
+    text-align: right;
+}
+
+.article > h1 {
+    font-size: 3em;
+    margin-left: 1rem;
+}
+
+.article > h2 {
+    font-size: 2em;
+    margin-left: .5rem;
+}
+
+.article > h3 {
+    font-size: 1.5em;
+    margin-left: .5rem;
+}
+
+.article > h4 {
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+/* Line Indents */
+
+.ti-1 {
+    text-indent: 4rem;
+}
+
+.ti-2 {
+    text-indent: 8rem;
+}
+
+.ti-3 {
+    text-indent: 12rem;
+}
+
+.ti-r0 {
+    text-align: right;
+}
+
+.ti-r1 {
+    text-align: right;
+}
