@@ -48,35 +48,40 @@ body {
     margin: 100px;
 }
 
-/* Article Defaults */
+/* Endnotes */
 
-.article {
-    /* color is in styles_all.css */
+.endnotes {
+    color: #991414;
+    border-top: 1px solid black;
+    margin-top: 3em;
+    font-style: italic;
 }
+
+/* Article Defaults */
 
 .align-r {
     text-align: right;
 }
 
-.article > h1 {
+.article h1 {
     font-size: 3em;
     margin-left: 1rem;
 }
 
-.article > h2 {
+.article h2 {
     font-size: 2em;
     margin-left: .5rem;
 }
 
-.article > h3 {
+.article h3 {
     font-size: 1.5em;
     margin-left: .5rem;
 }
 
-.article > h4 {
+.article h4 {
     font-weight: bold;
     font-size: 1.2em;
-}
+} 
 
 /* Line Indents */
 
@@ -92,10 +97,10 @@ body {
     text-indent: 12rem;
 }
 
-.ti-r0 {
-    text-align: right;
+/* Aphorism Specifics
+
+.apho {
+    
 }
 
-.ti-r1 {
-    text-align: right;
-}
+*/
