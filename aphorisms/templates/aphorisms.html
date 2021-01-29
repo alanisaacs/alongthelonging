@@ -12,13 +12,33 @@
 		displaybox.innerHTML = HTMLString;
 	}
 
+	function show_set_selections() {
+		// Populate dropdown for set selection
+		let HTMLString = "<select id='setselector'" +
+			"value='thedefault'" +
+			"onchange=show_selected_set()>" + 
+			"<option>Select One Set</option>";
+		let list_of_sets = get_list_of_sets();
+		for (let i=0; i<list_of_sets.length; i++) {
+			let setname = list_of_sets[i];
+			HTMLString += "<option value= " + setname +
+				">" + setname + "</option>";
+		}
+		HTMLString += "</select>";
+		document.getElementById("select_set").innerHTML = HTMLString;
+	}
+
+	function show_selected_set() {
+		let setname = document.getElementById("setselector").value;
+		show_one_set(setname);
+	}
+
 	function show_flow() {
 		// Display The Basic Flow of aphorisms
 		aphos_in_flow = "";
 		// For each aphorism
 		{% for a in aphos["aphorisms"] %}
 			// Add to display if "view" is "flow"
-			// console.log("{{ a['view'] }}");
 			{% if a["view"] == "flow" %}
 				aphos_in_flow += "<div class=apho>" + 
 						"{{ a.contents|safe }}" + 
@@ -47,6 +67,13 @@
 		display_article(set_to_show);
 	}
 
+	function show_one_set_random() {
+		let list_of_sets = get_list_of_sets();
+		let rndnum = Math.floor(Math.random() * list_of_sets.length);
+		let setname = list_of_sets[rndnum];
+		show_one_set(setname);
+	}
+
 	function get_list_of_sets() {
 		// Return an array containing all the sets
 		// Create a javascript set to remove duplicates
@@ -60,8 +87,8 @@
 		return list_of_sets;
 	}
 
-	// Display the whole list of aphorisms
 	function show_all_by_set() {
+		// Display the whole list of aphorisms
 		let list_of_sets = get_list_of_sets();
 		let aphos_all = "";
 		for (let i=0; i<list_of_sets.length; i++) {
@@ -70,6 +97,36 @@
 			aphos_all += get_one_set(setname);
 		}
 		display_article(aphos_all);
+	}
+
+	function show_random_one() {
+		let numaphos = 0;
+		{% for a in aphos["aphorisms"] %}
+			numaphos++;
+		{% endfor %}
+		let rndnum = Math.floor(Math.random() * numaphos);
+		let counter = 1;
+		let aphofound = false;
+		let apho_to_show = "";
+		{% for a in aphos["aphorisms"] %}
+			if (counter == rndnum) {
+				if (aphofound == false) {
+					apho_to_show = "{{ a.contents|safe }}";
+					aphofound = true;
+				}
+				// TODO: Break out of loop in some way
+				// Maybe use |first ?
+			} else {
+				counter++;
+			}
+		{% endfor %}
+		display_article(apho_to_show);
+		// TODO: This seems really hacky, to have to cycle
+		// twice through the entire list of aphorisms.
+		// Would be nice to put the javascript variable
+		// into the Jinja:
+		//     display_article(" aphos[ RNDNUM ].contents ")
+		// although id is not necessary the same as ordinal
 	}
 
 </script>
@@ -85,14 +142,16 @@
 
 <div class=bar_action>
 	<button onclick="show_flow()">The Basic Flow</button> 
-	<button onclick="show_one_set('feel')">One Set - Feel</button>
+	<button id=select_set>
+		<script>show_set_selections()</script>
+	</button>
+	<button onclick="show_one_set_random()">One Random Set</button>
 	<button onclick="show_all_by_set()">All by Set</button> 
 	<button onclick="show_random_one()">Random One</button>
-	<button onclick="show_random_all()">Random All</button>
+	<!-- TODO: <button onclick="show_random_all()">Random All</button> -->
 </div>
 
 <div id="displaybox">
-	<p>no content</p>
 	<script>show_flow();</script>
 </div>
 
@@ -105,6 +164,5 @@
 	<p>"Openness Gentleness Kindness"
 		come from Pema Chodron, The Wisdom of No Escape.</p>
 </div>
-
 
 {% endblock %}
