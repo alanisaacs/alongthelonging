@@ -1,0 +1,12 @@
+[
+	{ 
+		"name":"John",
+		"age":30,
+		"city":"New York"
+	},
+	{ 
+		"name":"Relequaria",
+		"age":60,
+		"city":"Pescadero"
+	}
+]

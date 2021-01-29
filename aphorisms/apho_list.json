@@ -1,0 +1,280 @@
+{
+	"aphorisms": [
+		{
+			"id": 1,
+			"set": "awareness",
+			"view": "flow",
+			"contents": "<p>&nbsp;</p><h4>Stop</h4>"
+		},
+		{
+			"id": 2,
+			"set": "awareness",
+			"view": "flow",
+			"contents": "<p>Sit quietly</p>"
+		},
+		{
+			"id": 3,
+			"set": "awareness",
+			"view": "flow",
+			"contents": "<p class=ti-1>Ask for openness</p>"
+		},
+		{
+			"id": 4,
+			"set": "awareness",
+			"view": "flow",
+			"contents": "<p class=ti-2>Your job is to feel</p>"
+		},
+		{
+			"id": 5, 
+			"set": "awareness",
+			"view": "flow",
+			"contents": "<p class=ti-1>Learn from breathing</p>"
+		},
+		{
+			"id": 6,
+			"set": "awareness",
+			"view": "flow",
+			"contents": "<p class=ti-2>Letting out is letting go, of thinking</p>"
+		},
+		{
+			"id": 7,
+			"set": "awareness",
+			"view": "flow",
+			"contents": "<p>All things pass even to die</p>"
+		},
+		{
+			"id": 8,
+			"set": "awareness",
+			"view": "flow",
+			"contents": "<p>&nbsp;</p><p>Time slows</p><p>To the space of a breath</p>"
+		},
+		{
+			"id": 9,
+			"set": "awareness",
+			"view": "flow",
+			"contents": "<p>&nbsp;</p><h4>This Is AWARENESS</h4><p>-</p><p>&nbsp;</p>"
+		},
+		{
+			"id": 10,
+			"set": "acceptance",
+			"view": "flow",
+			"contents": "<p>the best I can do</p><p>is to take care of myself</p><p>at my worst</p>"
+		},
+		{
+			"id": 11,
+			"set": "acceptance",
+			"view": "flow",
+			"contents": "<p>&nbsp;</p><p>if all I can do</p><p class=ti-1>is to sit</p><p class=ti-1>lost in confusion</p><p class=ti-2>then so be it</p>"
+		},
+		{
+			"id": 12,
+			"set": "acceptance",
+			"view": "flow",
+			"contents": "<p>&nbsp;</p><h4>This Is ACCEPTANCE</h4><p>-</p>"
+		},
+		{
+			"id": 13,
+			"set": "action",
+			"view": "flow",
+			"contents": "<p>&nbsp;</p><h4>Then, Arrive at an ACTION</h4>"
+		},
+		{
+			"id": 14,
+			"set": "action",
+			"view": "flow",
+			"contents": "<p>perform healing tasks</p><p>however small</p>"
+		},
+		{
+			"id": 15,
+			"set": "action",
+			"view": "flow",
+			"contents": "<p>&nbsp;</p><p>experience</p><p>pleasure, relaxation, comfort</p>"
+		},
+		{
+			"id": 16,
+			"set": "action",
+			"view": "flow",
+			"contents": "<p>&nbsp;</p><p>fullfill a longing</p>"
+		},
+		{
+			"id": 17,
+			"set": "action",
+			"view": "flow",
+			"contents": "<p>&nbsp;</p><p>prioritize by doing</p><p>and watching</p><p class=ti-1>what you do</p>"
+		},
+		{
+			"id": 18,
+			"set": "action",
+			"view": "flow",
+			"contents": "<p>-</p><p>&nbsp;</p>"
+		},
+		{
+			"id": 19,
+			"set": "feel",
+			"view": "",
+			"contents": "<p>if there is pain or fear</p><p class=ti-1>&ldquo;Bring It On&rdquo;</p><p class=ti-1>&ldquo;I love pain&rdquo;</p><p class=ti-1>&ldquo;Pain sets me free&rdquo;</p>"
+		},
+		{
+			"id": 20,
+			"set": "wrongness",
+			"view": "",
+			"contents": "<p>Hone your awareness of wrongful mechanisms.</p>"
+		},
+		{
+			"id": 21,
+			"set": "wrongness",
+			"view": "",
+			"contents": "<p>Accept the wrongness.</p><p>Feel the pain.</p><p>That is the way to compassion.</p>"
+		},
+		{
+			"id": 22,
+			"set": "feel",
+			"view": "",
+			"contents": "<p>When it hurts to decide between the virulent possibilities--do nothing.</p>"
+		},
+		{
+			"id": 23,
+			"set": "feel",
+			"view": "",
+			"contents": "<p>It's OK to feel bad.</p>"
+		},
+		{
+			"id": 24,
+			"set": "care",
+			"view": "",
+			"contents": "<p>The highest good is taking care of me.</p>"
+		},
+		{
+			"id": 25,
+			"set": "action",
+			"view": "",
+			"contents": "<p>Prioritize by doing.</p>"
+		},
+		{
+			"id": 26,
+			"set": "action",
+			"view": "",
+			"contents": "<p>Follow your nose around.</p>"
+		},
+		{
+			"id": 27,
+			"set": "slow",
+			"view": "",
+			"contents": "<p>Slow down.</p><p>I'm in no hurry.</p><p>I have no future projection.</p>"
+		}, 
+		{
+			"id": 28,
+			"set": "slow",
+			"view": "",
+			"contents": "<p>Take time to heal.</p>"
+		}, 
+		{
+			"id":29,
+			"set": "feel",
+			"view": "",
+			"contents": "<p>Honor suffering; it is not forever.</p>"
+		},
+		{
+			"id":30,
+			"set": "feel",
+			"view": "",
+			"contents": "<p>Look under anxiety; there is pain there.</p>"
+		},
+		{
+			"id":31,
+			"set": "action",
+			"view": "",
+			"contents": "<p>Don't decide the little choices</p><p class=ti-1>let them happen</p><p class=ti-1>don't control</p><p class=ti-1>let the decisions come to you</p>"
+		},
+		{
+			"id":32,
+			"set": "feel",
+			"view": "",
+			"contents": "<p>Anxiety doesn't serve.</p><p>You would do the same anyway without it</p><p>so give way and feel under.</p>"
+		},
+		{
+			"id":33,
+			"set": "slow",
+			"view": "",
+			"contents": "<p>Turn off the clocks.</p>"
+		},
+		{
+			"id":34,
+			"set": "awareness",
+			"view": "",
+			"contents": "<p>My higher power is the endless now.</p>"
+		},
+		{
+			"id":35,
+			"set": "feel",
+			"view": "",
+			"contents": "<p>It's OK to feel weak</p><p class=ti-1>or wrong</p><p class=ti-2>or small</p>"
+		},
+		{
+			"id":36,
+			"set": "compassion",
+			"view": "",
+			"contents": "<p>Hold yourself in sympathy</p><p class=ti-1>ask for help</p><p class=ti-1>don't try to fix or hide</p><p class=ti-1>letting go leads</p><p class=ti-2>to well-being in the moment</p>"
+		},
+		{
+			"id":37,
+			"set": "wrongness",
+			"view": "",
+			"contents": "<p>I can do no wrong.</p>"
+		},
+		{
+			"id":38,
+			"set": "wrongness",
+			"view": "",
+			"contents": "<p>I'm not doing anything wrong.</p>"
+		},
+		{
+			"id":39,
+			"set": "wrongness",
+			"view": "",
+			"contents": "<p>Everything (I could do)</p><p>is already correct</p>"
+		},
+		{
+			"id":40,
+			"set": "feel",
+			"view": "",
+			"contents": "<p>Every moment is exactly perfect</p><p>including those when I feel only</p><p class=ti-1>only fear, shame, hyper-vigilance</p><p>use that knowledge to feel under the fear</p><p class=ti-1>and let go</p><p class=ti-1>still perfect</p><p class=ti-2>regardless of result</p>"
+		},
+		{
+			"id":41,
+			"set": "presence",
+			"view": "",
+			"contents": "<p>I cannot force myself to exist</p><p class=ti-1>in the endless now</p><p class=ti-2>... however ...</p><p class=ti-1>it is easy</p>"
+		},
+		{
+			"id":42,
+			"set": "awareness",
+			"view": "",
+			"contents": "<p>Take breath</p><p>Exhale</p><p class=ti-1>let go all time</p>"
+		},
+		{
+			"id":43,
+			"set": "openness",
+			"view": "",
+			"contents": "<p>Ask for receptivity</p><p>&ldquo;Openness Gentleness Kindness&rdquo;</p>"
+		},
+		{
+			"id":44,
+			"set": "shame",
+			"view": "",
+			"contents": "<p>Shame is the language of the oppressor. Resist!</p><p>Even if&mdash;especially if&mdash;it's in your own head.</p>"
+		},
+		{
+			"id":45,
+			"set": "acceptance",
+			"view": "",
+			"contents": "<p>Trust in the What</p><p class=ti-1>and the Why will answer itself.</p>"
+		},
+		{
+			"id":46,
+			"set": "action",
+			"view": "",
+			"contents": "<p>STOP forcing yourself to do what you should.</p><p>DO only that which you want to</p><p class=ti-1>that which gives you pleasure.</p>"
+		}
+	]
+}

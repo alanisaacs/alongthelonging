@@ -41,6 +41,13 @@ body {
     color: var(--main-title-color);
 }
 
+.set_header {
+    background-color: #62257a;
+    /* background-color: var(--main-title-color); */
+    color: var(--body-background-color);
+    padding: .5rem;
+}
+
 /* Home Page */
 
 .atl_home {
@@ -58,6 +65,11 @@ body {
 }
 
 /* Article Defaults */
+
+.article {
+    /* overwrites styles_all.css */
+    padding: 1rem 10% 1rem;
+  }
 
 .align-r {
     text-align: right;
@@ -97,10 +109,8 @@ body {
     text-indent: 12rem;
 }
 
-/* Aphorism Specifics
+/* Aphorism Specifics */
 
 .apho {
-    
+    padding: 1rem;
 }
-
-*/
