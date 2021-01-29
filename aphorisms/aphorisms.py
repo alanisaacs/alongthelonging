@@ -15,7 +15,17 @@ aphorisms_bp = Blueprint(
 def showAphorisms():
     """Display aphorisms page"""
     # Get pointer to exiting file in read mode
-    path_to_aphos = os.getcwd() + "/aphorisms/apho_list.json"
+    # TEMPORARY FIX
+    ### DEBUG ###
+    import logging
+    cwd = os.getcwd()
+    logstring = "======= CWD: " + cwd + " ======="
+    logging.warning(logstring)
+    ### END DEBUG ###
+    if os.getenv('FLASK_ENV') == 'development':
+        path_to_aphos = os.getcwd() + "/aphorisms/apho_list.json"
+    else:
+        path_to_aphos = "/var/www/atl/aphorisms/apho_list.json"
     f = open(path_to_aphos)
     a_json = f.read()
     f.close()
