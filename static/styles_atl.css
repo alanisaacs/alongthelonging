@@ -37,8 +37,11 @@ body {
 /* ======= Subheaders ======= */
 
 /* extends styles_all.css */
-.bar_header {   
+.bar_header {
+    background-color: var(--body-background-color);
+    border-bottom: 1px solid black;
     color: var(--main-title-color);
+    margin-top: 30px;
 }
 
 /* Home Page */

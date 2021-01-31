@@ -6,12 +6,13 @@
 // Scripts for displaying aphorisms
 // (Unfortunately Jinja won't read from an external js file)
 
-	function display_article(contents, endnotes) {
+	function display_article(contents_and_endnotes) {
 		// Display contents on the page
-		HTMLString = "<div class=article>" + contents;
-		if (endnotes) {
+		// Pass in an array [contents, endnotes]
+		HTMLString = "<div class=article>" + contents_and_endnotes[0];
+		if (contents_and_endnotes[1]) {
 			HTMLString += "<div class=endnotes><p>NOTES</p>" + 
-				endnotes + "</div>";
+				contents_and_endnotes[1] + "</div>";
 		}
 		HTMLString += "</div>"
 		displaybox.innerHTML = HTMLString;
@@ -55,26 +56,32 @@
 				endnotes += "{{ a.endnote|safe }}";
 			}
 		{% endfor %}
-		display_article(aphos_in_flow, endnotes);
+		let contents_and_endnotes = [aphos_in_flow, endnotes];
+		display_article(contents_and_endnotes);
 	}
 
 	function get_one_set(setname) {
 		// Return aphos that have setname as their set
+		// Include endnotes
 		let aphos_in_set = "";
+		let endnotes = "";
 		{% for a in aphos["aphorisms"] %}
 			if ("{{ a.set }}" == setname) {
 				aphos_in_set += "<div class=apho>";
 				aphos_in_set += "{{ a.contents|safe }}";
 				aphos_in_set += "</div>";
+				endnotes += "{{ a.endnote|safe }}";
 			}
 		{% endfor %}
-		return aphos_in_set;
-		}
+		let contents_and_endnotes = [aphos_in_set, endnotes];
+		return (contents_and_endnotes);
+	}
 		
 	function show_one_set(setname) {
-		set_to_show = "<div class=set_header>" + setname + "</div>";
-		set_to_show += get_one_set(setname);
-		display_article(set_to_show);
+		let contents_and_endnotes = get_one_set(setname);
+		contents_and_endnotes[0] = "<div class=set_header>" + 
+			setname + "</div>" + contents_and_endnotes[0];
+		display_article(contents_and_endnotes);
 	}
 
 	function show_one_set_random() {
@@ -100,13 +107,21 @@
 	function show_all_by_set() {
 		// Display the whole list of aphorisms
 		let list_of_sets = get_list_of_sets();
-		let aphos_all = "";
+		// Initialize arrays that will pass contents and endnotes
+		//      as strings to be displayed
+		let con_end_set = ["", ""];
+		let con_end_all = ["", ""];
 		for (let i=0; i<list_of_sets.length; i++) {
 			let setname = list_of_sets[i];
-			aphos_all += "<div class=set_header>" + setname + "</div>"
-			aphos_all += get_one_set(setname);
+			con_end_set = get_one_set(setname);
+			con_end_set[0] = "<div class=set_header>" + 
+				setname + "</div>" + con_end_set[0];
+			// Append set contents to complete strings
+			con_end_all[0] = con_end_all[0] + con_end_set[0];
+			con_end_all[1] = con_end_all[1] + con_end_set[1];
 		}
-		display_article(aphos_all);
+		console.log(con_end_all[1])
+		display_article(con_end_all);
 	}
 
 	function show_random_one() {
