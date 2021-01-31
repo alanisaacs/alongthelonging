@@ -6,9 +6,14 @@
 // Scripts for displaying aphorisms
 // (Unfortunately Jinja won't read from an external js file)
 
-	function display_article(contents) {
+	function display_article(contents, endnotes) {
 		// Display contents on the page
-		HTMLString = "<div class=article>" + contents + "</div>";
+		HTMLString = "<div class=article>" + contents;
+		if (endnotes) {
+			HTMLString += "<div class=endnotes><p>NOTES</p>" + 
+				endnotes + "</div>";
+		}
+		HTMLString += "</div>"
 		displaybox.innerHTML = HTMLString;
 	}
 
@@ -33,19 +38,24 @@
 		show_one_set(setname);
 	}
 
-	function show_flow() {
-		// Display The Basic Flow of aphorisms
-		aphos_in_flow = "";
+	function show_view(viewname) {
+		console.log(viewname)
+		// Display aphorisms associated with view
+		// Include suffixes
+		let aphos_in_flow = "";
+		let endnotes = "";
 		// For each aphorism
 		{% for a in aphos["aphorisms"] %}
-			// Add to display if "view" is "flow"
-			{% if a["view"] == "flow" %}
+			// Add to display if "view" matches requested
+			if ("{{ a.view }}" == viewname) {
 				aphos_in_flow += "<div class=apho>" + 
 						"{{ a.contents|safe }}" + 
+						"{{ a.suffix|safe }}" +
 					"</div>";
-			{% endif %}
+				endnotes += "{{ a.endnote|safe }}";
+			}
 		{% endfor %}
-		display_article(aphos_in_flow);
+		display_article(aphos_in_flow, endnotes);
 	}
 
 	function get_one_set(setname) {
@@ -141,7 +151,7 @@
 </div>
 
 <div class=bar_action>
-	<button onclick="show_flow()">The Basic Flow</button> 
+	<button onclick="show_view('flow')">The Basic Flow</button> 
 	<button id=select_set>
 		<script>show_set_selections()</script>
 	</button>
@@ -152,17 +162,7 @@
 </div>
 
 <div id="displaybox">
-	<script>show_flow();</script>
-</div>
-
-<div class=endnotes>
-	<p>Notes</p>
-    <p>Awareness, Acceptance, and Action
-		are known as the "Three A's" in Twelve Step programs.</p>
-	<p>"Bring It On," "I love pain," and "Pain sets me free 
-		come from The Tools by Phil Stutz and Barry Michels.</p>
-	<p>"Openness Gentleness Kindness"
-		come from Pema Chodron, The Wisdom of No Escape.</p>
+	<script>show_view("flow");</script>
 </div>
 
 {% endblock %}

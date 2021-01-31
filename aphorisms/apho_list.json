@@ -4,277 +4,361 @@
 			"id": 1,
 			"set": "awareness",
 			"view": "flow",
-			"contents": "<p>&nbsp;</p><h4>Stop</h4>"
+			"contents": "<p>&nbsp;</p><h4>Stop</h4>",
+			"suffix": "",
+			"endnote": ""
 		},
 		{
 			"id": 2,
 			"set": "awareness",
 			"view": "flow",
-			"contents": "<p>Sit quietly</p>"
+			"contents": "<p>Sit quietly</p>",
+			"suffix": "",
+			"endnote": ""
 		},
 		{
 			"id": 3,
 			"set": "awareness",
 			"view": "flow",
-			"contents": "<p class=ti-1>Ask for openness</p>"
+			"contents": "<p class=ti-1>Ask for openness</p>",
+			"suffix": "",
+			"endnote": ""
 		},
 		{
 			"id": 4,
 			"set": "awareness",
 			"view": "flow",
-			"contents": "<p class=ti-2>Your job is to feel</p>"
+			"contents": "<p class=ti-2>Your job is to feel</p>",
+			"suffix": "",
+			"endnote": ""
 		},
 		{
 			"id": 5, 
 			"set": "awareness",
 			"view": "flow",
-			"contents": "<p class=ti-1>Learn from breathing</p>"
+			"contents": "<p class=ti-1>Learn from breathing</p>",
+			"suffix": "",
+			"endnote": ""
 		},
 		{
 			"id": 6,
 			"set": "awareness",
 			"view": "flow",
-			"contents": "<p class=ti-2>Letting out is letting go, of thinking</p>"
+			"contents": "<p class=ti-2>Letting out is letting go, of thinking</p>",
+			"suffix": "",
+			"endnote": ""
 		},
 		{
 			"id": 7,
 			"set": "awareness",
 			"view": "flow",
-			"contents": "<p>All things pass even to die</p>"
+			"contents": "<p>All things pass even to die</p>",
+			"suffix": "<p>&nbsp;</p>",
+			"endnote": ""
 		},
 		{
 			"id": 8,
 			"set": "awareness",
 			"view": "flow",
-			"contents": "<p>&nbsp;</p><p>Time slows</p><p>To the space of a breath</p>"
+			"contents": "<p>Time slows</p><p>To the space of a breath</p>",
+			"suffix": "",
+			"endnote": ""
 		},
 		{
 			"id": 9,
 			"set": "awareness",
 			"view": "flow",
-			"contents": "<p>&nbsp;</p><h4>This Is AWARENESS</h4><p>-</p><p>&nbsp;</p>"
+			"contents": "<h4>This Is AWARENESS</h4>",
+			"suffix": "<p>&nbsp;</p><p>&mdash;</p><p>&nbsp;</p>",
+			"endnote": "<p>Awareness, Acceptance, and Action are known as the Three A&lsquo;s in Twelve Step programs.</p>"
 		},
 		{
 			"id": 10,
 			"set": "acceptance",
 			"view": "flow",
-			"contents": "<p>the best I can do</p><p>is to take care of myself</p><p>at my worst</p>"
+			"contents": "<p>the best I can do</p><p>is to take care of myself</p><p>at my worst</p>",
+			"suffix": "",
+			"endnote": ""
 		},
 		{
 			"id": 11,
 			"set": "acceptance",
 			"view": "flow",
-			"contents": "<p>&nbsp;</p><p>if all I can do</p><p class=ti-1>is to sit</p><p class=ti-1>lost in confusion</p><p class=ti-2>then so be it</p>"
+			"contents": "<p>if all I can do</p><p class=ti-1>is to sit</p><p class=ti-1>lost in confusion</p><p class=ti-2>then so be it</p>",
+			"suffix": "",
+			"endnote": ""
 		},
 		{
 			"id": 12,
 			"set": "acceptance",
 			"view": "flow",
-			"contents": "<p>&nbsp;</p><h4>This Is ACCEPTANCE</h4><p>-</p>"
+			"contents": "<h4>This Is ACCEPTANCE</h4>",
+			"suffix": "<p>&nbsp;</p><p>&mdash;</p><p>&nbsp;</p>",
+			"endnote": ""
 		},
 		{
 			"id": 13,
 			"set": "action",
 			"view": "flow",
-			"contents": "<p>&nbsp;</p><h4>Then, Arrive at an ACTION</h4>"
+			"contents": "<h4>Then, Arrive at an ACTION</h4>",
+			"suffix": "",
+			"endnote": ""
 		},
 		{
 			"id": 14,
 			"set": "action",
 			"view": "flow",
-			"contents": "<p>perform healing tasks</p><p>however small</p>"
+			"contents": "<p>perform healing tasks</p><p>however small</p>",
+			"suffix": "",
+			"endnote": ""
 		},
 		{
 			"id": 15,
 			"set": "action",
 			"view": "flow",
-			"contents": "<p>&nbsp;</p><p>experience</p><p>pleasure, relaxation, comfort</p>"
+			"contents": "<p>experience</p><p>pleasure, relaxation, comfort</p>",
+			"suffix": "",
+			"endnote": ""
 		},
 		{
 			"id": 16,
 			"set": "action",
 			"view": "flow",
-			"contents": "<p>&nbsp;</p><p>fullfill a longing</p>"
+			"contents": "<p>fullfill a longing</p>",
+			"suffix": "",
+			"endnote": ""
 		},
 		{
 			"id": 17,
 			"set": "action",
 			"view": "flow",
-			"contents": "<p>&nbsp;</p><p>prioritize by doing</p><p>and watching</p><p class=ti-1>what you do</p>"
-		},
-		{
-			"id": 18,
-			"set": "action",
-			"view": "flow",
-			"contents": "<p>-</p><p>&nbsp;</p>"
+			"contents": "<p>prioritize by doing</p><p>and watching</p><p class=ti-1>what you do</p>",
+			"suffix": "<p>&nbsp;</p><p>&mdash;</p><p>&nbsp;</p>",
+			"endnote": ""
 		},
 		{
 			"id": 19,
 			"set": "feel",
 			"view": "",
-			"contents": "<p>if there is pain or fear</p><p class=ti-1>&ldquo;Bring It On&rdquo;</p><p class=ti-1>&ldquo;I love pain&rdquo;</p><p class=ti-1>&ldquo;Pain sets me free&rdquo;</p>"
+			"contents": "<p>if there is pain or fear</p><p class=ti-1>&ldquo;Bring It On&rdquo;</p><p class=ti-1>&ldquo;I love pain&rdquo;</p><p class=ti-1>&ldquo;Pain sets me free&rdquo;</p>",
+			"suffix": "",
+			"endnote": "<p>Bring It On, I love pain, and Pain sets me free come from The Tools by Phil Stutz and Barry Michels.</p>"
 		},
 		{
 			"id": 20,
 			"set": "wrongness",
 			"view": "",
-			"contents": "<p>Hone your awareness of wrongful mechanisms.</p>"
+			"contents": "<p>Hone your awareness of wrongful mechanisms.</p>",
+			"suffix": "",
+			"endnote": ""
 		},
 		{
 			"id": 21,
 			"set": "wrongness",
 			"view": "",
-			"contents": "<p>Accept the wrongness.</p><p>Feel the pain.</p><p>That is the way to compassion.</p>"
+			"contents": "<p>Accept the wrongness.</p><p>Feel the pain.</p><p>That is the way to compassion.</p>",
+			"suffix": "",
+			"endnote": ""
 		},
 		{
 			"id": 22,
 			"set": "feel",
 			"view": "",
-			"contents": "<p>When it hurts to decide between the virulent possibilities--do nothing.</p>"
+			"contents": "<p>When it hurts to decide between the virulent possibilities--do nothing.</p>",
+			"suffix": "",
+			"endnote": ""
 		},
 		{
 			"id": 23,
 			"set": "feel",
 			"view": "",
-			"contents": "<p>It's OK to feel bad.</p>"
+			"contents": "<p>It's OK to feel bad.</p>",
+			"suffix": "",
+			"endnote": ""
 		},
 		{
 			"id": 24,
 			"set": "care",
 			"view": "",
-			"contents": "<p>The highest good is taking care of me.</p>"
+			"contents": "<p>The highest good is taking care of me.</p>",
+			"suffix": "",
+			"endnote": ""
 		},
 		{
 			"id": 25,
 			"set": "action",
 			"view": "",
-			"contents": "<p>Prioritize by doing.</p>"
+			"contents": "<p>Prioritize by doing.</p>",
+			"suffix": "",
+			"endnote": ""
 		},
 		{
 			"id": 26,
 			"set": "action",
 			"view": "",
-			"contents": "<p>Follow your nose around.</p>"
+			"contents": "<p>Follow your nose around.</p>",
+			"suffix": "",
+			"endnote": ""
 		},
 		{
 			"id": 27,
 			"set": "slow",
 			"view": "",
-			"contents": "<p>Slow down.</p><p>I'm in no hurry.</p><p>I have no future projection.</p>"
+			"contents": "<p>Slow down.</p><p>I'm in no hurry.</p><p>I have no future projection.</p>",
+			"suffix": "",
+			"endnote": ""
 		}, 
 		{
 			"id": 28,
 			"set": "slow",
 			"view": "",
-			"contents": "<p>Take time to heal.</p>"
+			"contents": "<p>Take time to heal.</p>",
+			"suffix": "",
+			"endnote": ""
 		}, 
 		{
 			"id":29,
 			"set": "feel",
 			"view": "",
-			"contents": "<p>Honor suffering; it is not forever.</p>"
+			"contents": "<p>Honor suffering; it is not forever.</p>",
+			"suffix": "",
+			"endnote": ""
 		},
 		{
 			"id":30,
 			"set": "feel",
 			"view": "",
-			"contents": "<p>Look under anxiety; there is pain there.</p>"
+			"contents": "<p>Look under anxiety; there is pain there.</p>",
+			"suffix": "",
+			"endnote": ""
 		},
 		{
 			"id":31,
 			"set": "action",
 			"view": "",
-			"contents": "<p>Don't decide the little choices</p><p class=ti-1>let them happen</p><p class=ti-1>don't control</p><p class=ti-1>let the decisions come to you</p>"
+			"contents": "<p>Don't decide the little choices</p><p class=ti-1>let them happen</p><p class=ti-1>don't control</p><p class=ti-1>let the decisions come to you</p>",
+			"suffix": "",
+			"endnote": ""
 		},
 		{
 			"id":32,
 			"set": "feel",
 			"view": "",
-			"contents": "<p>Anxiety doesn't serve.</p><p>You would do the same anyway without it</p><p>so give way and feel under.</p>"
+			"contents": "<p>Anxiety doesn't serve.</p><p>You would do the same anyway without it</p><p>so give way and feel under.</p>",
+			"suffix": "",
+			"endnote": ""
 		},
 		{
 			"id":33,
 			"set": "slow",
 			"view": "",
-			"contents": "<p>Turn off the clocks.</p>"
+			"contents": "<p>Turn off the clocks.</p>",
+			"suffix": "",
+			"endnote": ""
 		},
 		{
 			"id":34,
 			"set": "awareness",
 			"view": "",
-			"contents": "<p>My higher power is the endless now.</p>"
+			"contents": "<p>My higher power is the endless now.</p>",
+			"suffix": "",
+			"endnote": ""
 		},
 		{
 			"id":35,
 			"set": "feel",
 			"view": "",
-			"contents": "<p>It's OK to feel weak</p><p class=ti-1>or wrong</p><p class=ti-2>or small</p>"
+			"contents": "<p>It's OK to feel weak</p><p class=ti-1>or wrong</p><p class=ti-2>or small</p>",
+			"suffix": "",
+			"endnote": ""
 		},
 		{
 			"id":36,
 			"set": "compassion",
 			"view": "",
-			"contents": "<p>Hold yourself in sympathy</p><p class=ti-1>ask for help</p><p class=ti-1>don't try to fix or hide</p><p class=ti-1>letting go leads</p><p class=ti-2>to well-being in the moment</p>"
+			"contents": "<p>Hold yourself in sympathy</p><p class=ti-1>ask for help</p><p class=ti-1>don't try to fix or hide</p><p class=ti-1>letting go leads</p><p class=ti-2>to well-being in the moment</p>",
+			"suffix": "",
+			"endnote": ""
 		},
 		{
 			"id":37,
 			"set": "wrongness",
 			"view": "",
-			"contents": "<p>I can do no wrong.</p>"
+			"contents": "<p>I can do no wrong.</p>",
+			"suffix": "",
+			"endnote": ""
 		},
 		{
 			"id":38,
 			"set": "wrongness",
 			"view": "",
-			"contents": "<p>I'm not doing anything wrong.</p>"
+			"contents": "<p>I'm not doing anything wrong.</p>",
+			"suffix": "",
+			"endnote": ""
 		},
 		{
 			"id":39,
 			"set": "wrongness",
 			"view": "",
-			"contents": "<p>Everything (I could do)</p><p>is already correct</p>"
+			"contents": "<p>Everything (I could do)</p><p>is already correct</p>",
+			"suffix": "",
+			"endnote": ""
 		},
 		{
 			"id":40,
 			"set": "feel",
 			"view": "",
-			"contents": "<p>Every moment is exactly perfect</p><p>including those when I feel only</p><p class=ti-1>only fear, shame, hyper-vigilance</p><p>use that knowledge to feel under the fear</p><p class=ti-1>and let go</p><p class=ti-1>still perfect</p><p class=ti-2>regardless of result</p>"
+			"contents": "<p>Every moment is exactly perfect</p><p>including those when I feel only</p><p class=ti-1>only fear, shame, hyper-vigilance</p><p>use that knowledge to feel under the fear</p><p class=ti-1>and let go</p><p class=ti-1>still perfect</p><p class=ti-2>regardless of result</p>",
+			"suffix": "",
+			"endnote": ""
 		},
 		{
 			"id":41,
 			"set": "presence",
 			"view": "",
-			"contents": "<p>I cannot force myself to exist</p><p class=ti-1>in the endless now</p><p class=ti-2>... however ...</p><p class=ti-1>it is easy</p>"
+			"contents": "<p>I cannot force myself to exist</p><p class=ti-1>in the endless now</p><p class=ti-2>... however ...</p><p class=ti-1>it is easy</p>",
+			"suffix": "",
+			"endnote": ""
 		},
 		{
 			"id":42,
 			"set": "awareness",
 			"view": "",
-			"contents": "<p>Take breath</p><p>Exhale</p><p class=ti-1>let go all time</p>"
+			"contents": "<p>Take breath</p><p>Exhale</p><p class=ti-1>let go all time</p>",
+			"suffix": "",
+			"endnote": ""
 		},
 		{
 			"id":43,
 			"set": "openness",
 			"view": "",
-			"contents": "<p>Ask for receptivity</p><p>&ldquo;Openness Gentleness Kindness&rdquo;</p>"
+			"contents": "<p>Ask for receptivity</p><p>&ldquo;Openness Gentleness Kindness&rdquo;</p>",
+			"suffix": "",
+			"endnote": "<p>Openness Gentleness Kindness comes from Pema Chodron, The Wisdom of No Escape.</p>"
 		},
 		{
 			"id":44,
 			"set": "shame",
 			"view": "",
-			"contents": "<p>Shame is the language of the oppressor. Resist!</p><p>Even if&mdash;especially if&mdash;it's in your own head.</p>"
+			"contents": "<p>Shame is the language of the oppressor. Resist!</p><p>Even if&mdash;especially if&mdash;it's in your own head.</p>",
+			"suffix": "",
+			"endnote": ""
 		},
 		{
 			"id":45,
 			"set": "acceptance",
 			"view": "",
-			"contents": "<p>Trust in the What</p><p class=ti-1>and the Why will answer itself.</p>"
+			"contents": "<p>Trust in the What</p><p class=ti-1>and the Why will answer itself.</p>",
+			"suffix": "",
+			"endnote": ""
 		},
 		{
 			"id":46,
 			"set": "action",
 			"view": "",
-			"contents": "<p>STOP forcing yourself to do what you should.</p><p>DO only that which you want to</p><p class=ti-1>that which gives you pleasure.</p>"
+			"contents": "<p>STOP forcing yourself to do what you should.</p><p>DO only that which you want to</p><p class=ti-1>that which gives you pleasure.</p>",
+			"suffix": "",
+			"endnote": ""
 		}
 	]
 }
