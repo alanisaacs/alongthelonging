@@ -4,7 +4,7 @@
 			"id": 1,
 			"set": "awareness",
 			"view": "flow",
-			"contents": "<p>&nbsp;</p><h4>Stop</h4>",
+			"contents": "<p>&nbsp;</p><h4>STOP</h4>",
 			"suffix": "",
 			"endnote": ""
 		},
@@ -12,7 +12,7 @@
 			"id": 2,
 			"set": "awareness",
 			"view": "flow",
-			"contents": "<p>Sit quietly</p>",
+			"contents": "<p>sit quietly</p>",
 			"suffix": "",
 			"endnote": ""
 		},
@@ -20,15 +20,15 @@
 			"id": 3,
 			"set": "awareness",
 			"view": "flow",
-			"contents": "<p class=ti-1>Ask for openness</p>",
+			"contents": "<p class=ti-1>ask for openness</p>",
 			"suffix": "",
 			"endnote": ""
 		},
 		{
 			"id": 4,
-			"set": "awareness",
-			"view": "flow",
-			"contents": "<p class=ti-2>Your job is to feel</p>",
+			"set": "feeling",
+			"view": "",
+			"contents": "<p>my job is to feel</p>",
 			"suffix": "",
 			"endnote": ""
 		},
@@ -36,7 +36,7 @@
 			"id": 5, 
 			"set": "awareness",
 			"view": "flow",
-			"contents": "<p class=ti-1>Learn from breathing</p>",
+			"contents": "<p class=ti-1>learn from breathing</p>",
 			"suffix": "",
 			"endnote": ""
 		},
@@ -44,7 +44,7 @@
 			"id": 6,
 			"set": "awareness",
 			"view": "flow",
-			"contents": "<p class=ti-2>Letting out is letting go, of thinking</p>",
+			"contents": "<p class=ti-2>letting out is letting go, of thinking</p>",
 			"suffix": "",
 			"endnote": ""
 		},
@@ -52,7 +52,7 @@
 			"id": 7,
 			"set": "awareness",
 			"view": "flow",
-			"contents": "<p>All things pass even to die</p>",
+			"contents": "<p>all things pass even to die</p>",
 			"suffix": "<p>&nbsp;</p>",
 			"endnote": ""
 		},
@@ -60,7 +60,7 @@
 			"id": 8,
 			"set": "awareness",
 			"view": "flow",
-			"contents": "<p>Time slows</p><p>To the space of a breath</p>",
+			"contents": "<p>time slows</p><p>to the space of a breath</p>",
 			"suffix": "",
 			"endnote": ""
 		},
@@ -68,9 +68,9 @@
 			"id": 9,
 			"set": "awareness",
 			"view": "flow",
-			"contents": "<h4>This Is AWARENESS</h4>",
+			"contents": "<h4>this is AWARENESS</h4>",
 			"suffix": "<p>&nbsp;</p><p>&mdash;</p><p>&nbsp;</p>",
-			"endnote": "<p>&ldquo;Awareness, Acceptance, and Action&rdquo; are known as the Three A&lsquo;s in Twelve Step programs.</p>"
+			"endnote": "<p>&ldquo;Awareness, Acceptance, and Action&rdquo; are known as the Three A&lsquo;s in twelve-step programs</p>"
 		},
 		{
 			"id": 10,
@@ -92,7 +92,7 @@
 			"id": 12,
 			"set": "acceptance",
 			"view": "flow",
-			"contents": "<h4>This Is ACCEPTANCE</h4>",
+			"contents": "<h4>this is ACCEPTANCE</h4>",
 			"suffix": "<p>&nbsp;</p><p>&mdash;</p><p>&nbsp;</p>",
 			"endnote": ""
 		},
@@ -100,7 +100,7 @@
 			"id": 13,
 			"set": "action",
 			"view": "flow",
-			"contents": "<h4>Then, Arrive at an ACTION</h4>",
+			"contents": "<h4>then, arrive at an ACTION</h4>",
 			"suffix": "",
 			"endnote": ""
 		},
@@ -116,7 +116,7 @@
 			"id": 15,
 			"set": "action",
 			"view": "flow",
-			"contents": "<p>experience</p><p>pleasure, relaxation, comfort</p>",
+			"contents": "<p>experience</p><p class=ti-1>pleasure, relaxation, comfort</p>",
 			"suffix": "",
 			"endnote": ""
 		},
@@ -132,23 +132,23 @@
 			"id": 17,
 			"set": "action",
 			"view": "flow",
-			"contents": "<p>prioritize by doing</p><p>and watching</p><p class=ti-1>what you do</p>",
+			"contents": "<p>prioritize by doing</p><p>and watching</p><p class=ti-1>what is done</p>",
 			"suffix": "<p>&nbsp;</p><p>&mdash;</p><p>&nbsp;</p>",
 			"endnote": ""
 		},
 		{
 			"id": 19,
-			"set": "feel",
+			"set": "feeling",
 			"view": "",
-			"contents": "<p>if there is pain or fear</p><p class=ti-1>&ldquo;Bring It On&rdquo;</p><p class=ti-1>&ldquo;I love pain&rdquo;</p><p class=ti-1>&ldquo;Pain sets me free&rdquo;</p>",
+			"contents": "<p>if there is pain or fear</p><p class=ti-1>&ldquo;Bring It On&rdquo;</p><p class=ti-1>&ldquo;I love pain&rdquo;</p><p class=ti-1>&ldquo;pain sets me free&rdquo;</p>",
 			"suffix": "",
-			"endnote": "<p>&ldquo;Bring It On,&rdquo; &ldquo;I love pain,&rdquo; and &ldquo;Pain sets me free&rdquo; come from The Tools by Phil Stutz and Barry Michels.</p>"
+			"endnote": "<p>&ldquo;Bring It On,&rdquo; &ldquo;I love pain,&rdquo; and &ldquo;Pain sets me free&rdquo; come from The Tools by Phil Stutz and Barry Michels</p>"
 		},
 		{
 			"id": 20,
 			"set": "wrongness",
 			"view": "",
-			"contents": "<p>Hone your awareness of wrongful mechanisms.</p>",
+			"contents": "<p>hone your awareness of wrongful mechanisms</p>",
 			"suffix": "",
 			"endnote": ""
 		},
@@ -156,47 +156,39 @@
 			"id": 21,
 			"set": "wrongness",
 			"view": "",
-			"contents": "<p>Accept the wrongness.</p><p>Feel the pain.</p><p>That is the way to compassion.</p>",
+			"contents": "<p>accept the wrongness</p><p class=ti-1>feel the pain</p><p>that is the way to compassion</p>",
 			"suffix": "",
 			"endnote": ""
 		},
 		{
 			"id": 22,
-			"set": "feel",
+			"set": "feeling",
 			"view": "",
-			"contents": "<p>When it hurts to decide between the virulent possibilities--do nothing.</p>",
-			"suffix": "",
-			"endnote": ""
-		},
-		{
-			"id": 23,
-			"set": "feel",
-			"view": "",
-			"contents": "<p>It's OK to feel bad.</p>",
+			"contents": "<p>when it hurts to decide between the virulent possibilities&mdash;do nothing</p>",
 			"suffix": "",
 			"endnote": ""
 		},
 		{
 			"id": 24,
-			"set": "care",
+			"set": "compassion",
 			"view": "",
-			"contents": "<p>The highest good is taking care of me.</p>",
+			"contents": "<p>the highest good is taking care of myself</p>",
 			"suffix": "",
 			"endnote": ""
 		},
 		{
-			"id": 25,
-			"set": "action",
+			"id":25,
+			"set": "compassion",
 			"view": "",
-			"contents": "<p>Prioritize by doing.</p>",
+			"contents": "<p>hold myself in sympathy</p><p class=ti-1>ask for help</p>",
 			"suffix": "",
 			"endnote": ""
-		},
+		},		
 		{
 			"id": 26,
 			"set": "action",
 			"view": "",
-			"contents": "<p>Follow your nose around.</p>",
+			"contents": "<p>follow my nose around</p>",
 			"suffix": "",
 			"endnote": ""
 		},
@@ -204,7 +196,7 @@
 			"id": 27,
 			"set": "slow",
 			"view": "",
-			"contents": "<p>Slow down.</p><p>I'm in no hurry.</p><p>I have no future projection.</p>",
+			"contents": "<p>slow down</p><p>I'm in no hurry</p><p>I have no future projection</p>",
 			"suffix": "",
 			"endnote": ""
 		}, 
@@ -212,23 +204,23 @@
 			"id": 28,
 			"set": "slow",
 			"view": "",
-			"contents": "<p>Take time to heal.</p>",
+			"contents": "<p>take time to heal</p>",
 			"suffix": "",
 			"endnote": ""
 		}, 
 		{
 			"id":29,
-			"set": "feel",
+			"set": "feeling",
 			"view": "",
-			"contents": "<p>Honor suffering; it is not forever.</p>",
+			"contents": "<p>honor suffering; it is not forever</p>",
 			"suffix": "",
 			"endnote": ""
 		},
 		{
 			"id":30,
-			"set": "feel",
+			"set": "shame",
 			"view": "",
-			"contents": "<p>Look under anxiety; there is pain there.</p>",
+			"contents": "<p>look under shame</p><p class=ti-1>and anxiety</p><p>there is pain there</p>",
 			"suffix": "",
 			"endnote": ""
 		},
@@ -236,15 +228,15 @@
 			"id":31,
 			"set": "action",
 			"view": "",
-			"contents": "<p>Don't decide the little choices</p><p class=ti-1>let them happen</p><p class=ti-1>don't control</p><p class=ti-1>let the decisions come to you</p>",
+			"contents": "<p>don't decide the little choices</p><p class=ti-1>let them happen</p><p class=ti-1>don't control</p><p class=ti-1>let the decisions come to me</p>",
 			"suffix": "",
 			"endnote": ""
 		},
 		{
 			"id":32,
-			"set": "feel",
+			"set": "openness",
 			"view": "",
-			"contents": "<p>Anxiety doesn't serve.</p><p>You would do the same anyway without it</p><p>so give way and feel under.</p>",
+			"contents": "<p>anxiety doesn't serve me</p><p class=ti-1>it shuts off my connections</p><p class=ti-1>so give way and feel under</p>",
 			"suffix": "",
 			"endnote": ""
 		},
@@ -252,7 +244,7 @@
 			"id":33,
 			"set": "slow",
 			"view": "",
-			"contents": "<p>Turn off the clocks.</p>",
+			"contents": "<p>turn off the clocks</p>",
 			"suffix": "",
 			"endnote": ""
 		},
@@ -260,15 +252,15 @@
 			"id":34,
 			"set": "awareness",
 			"view": "",
-			"contents": "<p>My higher power is the endless now.</p>",
+			"contents": "<p>my higher power is the endless now</p>",
 			"suffix": "",
 			"endnote": ""
 		},
 		{
 			"id":35,
-			"set": "feel",
+			"set": "feeling",
 			"view": "",
-			"contents": "<p>It's OK to feel weak</p><p class=ti-1>or wrong</p><p class=ti-2>or small</p>",
+			"contents": "<p>it's okay to feel bad</p><p class=ti-1>or weak or wrong</p><p class=ti-2>or small</p>",
 			"suffix": "",
 			"endnote": ""
 		},
@@ -276,7 +268,7 @@
 			"id":36,
 			"set": "compassion",
 			"view": "",
-			"contents": "<p>Hold yourself in sympathy</p><p class=ti-1>ask for help</p><p class=ti-1>don't try to fix or hide</p><p class=ti-1>letting go leads</p><p class=ti-2>to well-being in the moment</p>",
+			"contents": "<p>don't try to fix or hide</p><p>letting go leads</p><p class=ti-1>to well-being in the moment</p>",
 			"suffix": "",
 			"endnote": ""
 		},
@@ -284,31 +276,22 @@
 			"id":37,
 			"set": "wrongness",
 			"view": "",
-			"contents": "<p>I can do no wrong.</p>",
-			"suffix": "",
-			"endnote": ""
-		},
-		{
-			"id":38,
-			"set": "wrongness",
-			"view": "",
-			"contents": "<p>I'm not doing anything wrong.</p>",
-			"suffix": "",
+			"contents": "<p>I'm not doing anything wrong</p><p class=ti-1>I can do no wrong</p>",
 			"endnote": ""
 		},
 		{
 			"id":39,
 			"set": "wrongness",
 			"view": "",
-			"contents": "<p>Everything (I could do)</p><p>is already correct</p>",
+			"contents": "<p>everything (I could do)</p><p class=ti-1>is already correct</p>",
 			"suffix": "",
 			"endnote": ""
 		},
 		{
 			"id":40,
-			"set": "feel",
+			"set": "wrongness",
 			"view": "",
-			"contents": "<p>Every moment is exactly perfect</p><p>including those when I feel only</p><p class=ti-1>only fear, shame, hyper-vigilance</p><p>use that knowledge to feel under the fear</p><p class=ti-1>and let go</p><p class=ti-1>still perfect</p><p class=ti-2>regardless of result</p>",
+			"contents": "<p>every moment is exactly perfect</p><p>including those when I feel</p><p class=ti-1>only fear, shame, hyper-vigilance</p><p>use that knowledge to feel under the fear</p><p class=ti-1>and let go</p><p class=ti-1>still perfect</p><p class=ti-2>regardless of result</p>",
 			"suffix": "",
 			"endnote": ""
 		},
@@ -324,7 +307,7 @@
 			"id":42,
 			"set": "awareness",
 			"view": "",
-			"contents": "<p>Take breath</p><p>Exhale</p><p class=ti-1>let go all time</p>",
+			"contents": "<p>take breath</p><p>exhale</p><p class=ti-1>let go all time</p>",
 			"suffix": "",
 			"endnote": ""
 		},
@@ -332,15 +315,15 @@
 			"id":43,
 			"set": "openness",
 			"view": "",
-			"contents": "<p>Ask for receptivity</p><p>&ldquo;Openness Gentleness Kindness&rdquo;</p>",
+			"contents": "<p>ask for receptivity</p><p class=ti-1>&ldquo;Openness Gentleness Kindness&rdquo;</p>",
 			"suffix": "",
-			"endnote": "<p>The refrain &ldquo;Openness Gentleness Kindness&rdquo; comes from Pema Chodron, The Wisdom of No Escape.</p>"
+			"endnote": "<p>The refrain &ldquo;Openness Gentleness Kindness&rdquo; comes from Pema Chodron, The Wisdom of No Escape</p>"
 		},
 		{
 			"id":44,
 			"set": "shame",
 			"view": "",
-			"contents": "<p>Shame is the language of the oppressor. Resist!</p><p>Even if&mdash;especially if&mdash;it's in your own head.</p>",
+			"contents": "<p>shame is the language of the oppressor&mdash;resist!</p><p class=ti-1>even if&mdash;especially if&mdash;it's in my own head</p>",
 			"suffix": "",
 			"endnote": ""
 		},
@@ -348,15 +331,15 @@
 			"id":45,
 			"set": "acceptance",
 			"view": "",
-			"contents": "<p>Trust in the What</p><p class=ti-1>and the Why will answer itself.</p>",
+			"contents": "<p>trust in the What</p><p class=ti-1>and the Why will answer itself</p>",
 			"suffix": "",
 			"endnote": ""
 		},
 		{
 			"id":46,
-			"set": "action",
+			"set": "presence",
 			"view": "",
-			"contents": "<p>STOP forcing yourself to do what you should.</p><p>DO only that which you want to</p><p class=ti-1>that which gives you pleasure.</p>",
+			"contents": "<p>STOP forcing myself to do what I should</p><p>DO only that which I want to</p><p class=ti-1>that which gives me pleasure</p>",
 			"suffix": "",
 			"endnote": ""
 		}

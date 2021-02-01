@@ -40,7 +40,6 @@
 	}
 
 	function show_view(viewname) {
-		console.log(viewname)
 		// Display aphorisms associated with view
 		// Include suffixes
 		let aphos_in_flow = "";
@@ -120,38 +119,30 @@
 			con_end_all[0] = con_end_all[0] + con_end_set[0];
 			con_end_all[1] = con_end_all[1] + con_end_set[1];
 		}
-		console.log(con_end_all[1])
 		display_article(con_end_all);
 	}
 
 	function show_random_one() {
-		let numaphos = 0;
-		{% for a in aphos["aphorisms"] %}
-			numaphos++;
-		{% endfor %}
+		let numaphos = "{{ aphos.aphorisms|length }}";
 		let rndnum = Math.floor(Math.random() * numaphos);
 		let counter = 1;
 		let aphofound = false;
 		let apho_to_show = "";
-		{% for a in aphos["aphorisms"] %}
+		{% for a in aphos.aphorisms %}
 			if (counter == rndnum) {
 				if (aphofound == false) {
-					apho_to_show = "{{ a.contents|safe }}";
+					apho_contents = "{{ a.contents|safe }}";
+					apho_endnotes= "{{ a.endnote|safe }}"
 					aphofound = true;
 				}
-				// TODO: Break out of loop in some way
-				// Maybe use |first ?
+				// Jinja does not seem to support
+				//     breaking out of loops
+				//     "|first" does not work
 			} else {
 				counter++;
 			}
 		{% endfor %}
-		display_article(apho_to_show);
-		// TODO: This seems really hacky, to have to cycle
-		// twice through the entire list of aphorisms.
-		// Would be nice to put the javascript variable
-		// into the Jinja:
-		//     display_article(" aphos[ RNDNUM ].contents ")
-		// although id is not necessary the same as ordinal
+		display_article([apho_contents, apho_endnotes]);
 	}
 
 </script>
