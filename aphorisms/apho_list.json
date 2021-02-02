@@ -28,7 +28,7 @@
 			"id": 4,
 			"set": "feeling",
 			"view": "",
-			"contents": "<p>my job is to feel</p>",
+			"contents": "<p>your job is to feel</p>",
 			"suffix": "",
 			"endnote": ""
 		},
@@ -44,7 +44,7 @@
 			"id": 6,
 			"set": "awareness",
 			"view": "flow",
-			"contents": "<p class=ti-2>letting out is letting go, of thinking</p>",
+			"contents": "<p>letting out is letting go, of thinking</p>",
 			"suffix": "",
 			"endnote": ""
 		},
@@ -137,10 +137,18 @@
 			"endnote": ""
 		},
 		{
+			"id": 18,
+			"set": "openness",
+			"view": "",
+			"contents": "<p>expand your center</p><p class=ti-1><p>unitl it encompasses all</p>",
+			"suffix": "",
+			"endnote": ""
+		},
+		{
 			"id": 19,
 			"set": "feeling",
 			"view": "",
-			"contents": "<p>if there is pain or fear</p><p class=ti-1>&ldquo;Bring It On&rdquo;</p><p class=ti-1>&ldquo;I love pain&rdquo;</p><p class=ti-1>&ldquo;pain sets me free&rdquo;</p>",
+			"contents": "<p>if there is pain or fear</p><p class=ti-1>&ldquo;Bring It On&rdquo;</p><p class=ti-1>&ldquo;I love pain&rdquo;</p><p class=ti-1>&ldquo;Pain sets me free&rdquo;</p>",
 			"suffix": "",
 			"endnote": "<p>&ldquo;Bring It On,&rdquo; &ldquo;I love pain,&rdquo; and &ldquo;Pain sets me free&rdquo; come from The Tools by Phil Stutz and Barry Michels</p>"
 		},
@@ -164,7 +172,7 @@
 			"id": 22,
 			"set": "feeling",
 			"view": "",
-			"contents": "<p>when it hurts to decide between the virulent possibilities&mdash;do nothing</p>",
+			"contents": "<p>when it hurts to decide between the virulent possibilities</p></p class=ti-1>&mdash;do nothing</p>",
 			"suffix": "",
 			"endnote": ""
 		},
@@ -180,7 +188,7 @@
 			"id":25,
 			"set": "compassion",
 			"view": "",
-			"contents": "<p>hold myself in sympathy</p><p class=ti-1>ask for help</p>",
+			"contents": "<p>hold yourself in sympathy</p><p class=ti-1>ask for help</p>",
 			"suffix": "",
 			"endnote": ""
 		},		
@@ -188,7 +196,7 @@
 			"id": 26,
 			"set": "action",
 			"view": "",
-			"contents": "<p>follow my nose around</p>",
+			"contents": "<p>follow your nose around</p>",
 			"suffix": "",
 			"endnote": ""
 		},
@@ -212,7 +220,7 @@
 			"id":29,
 			"set": "feeling",
 			"view": "",
-			"contents": "<p>honor suffering; it is not forever</p>",
+			"contents": "<p>honor suffering</p><p>when experience is suffering</p><p class=ti-1>it is not forever</p>",
 			"suffix": "",
 			"endnote": ""
 		},
@@ -228,7 +236,7 @@
 			"id":31,
 			"set": "action",
 			"view": "",
-			"contents": "<p>don't decide the little choices</p><p class=ti-1>let them happen</p><p class=ti-1>don't control</p><p class=ti-1>let the decisions come to me</p>",
+					"contents": "<p>don't decide the little choices</p><p class=ti-1>let them happen on their own</p><p class=ti-2>let go of control</p><p class=ti-1>let the decisions come to you</p>",
 			"suffix": "",
 			"endnote": ""
 		},
@@ -268,7 +276,7 @@
 			"id":36,
 			"set": "compassion",
 			"view": "",
-			"contents": "<p>don't try to fix or hide</p><p>letting go leads</p><p class=ti-1>to well-being in the moment</p>",
+			"contents": "<p>don't try to fix it</p><p>letting go leads</p><p class=ti-1>to well-being in the moment</p>",
 			"suffix": "",
 			"endnote": ""
 		},
@@ -277,6 +285,13 @@
 			"set": "wrongness",
 			"view": "",
 			"contents": "<p>I'm not doing anything wrong</p><p class=ti-1>I can do no wrong</p>",
+			"endnote": ""
+		},
+		{
+			"id":38,
+			"set": "shame",
+			"view": "",
+			"contents": "<p>hiding from the world</p><p class=ti-1>is sometimes healing</p>",
 			"endnote": ""
 		},
 		{
@@ -315,7 +330,7 @@
 			"id":43,
 			"set": "openness",
 			"view": "",
-			"contents": "<p>ask for receptivity</p><p class=ti-1>&ldquo;Openness Gentleness Kindness&rdquo;</p>",
+			"contents": "<p>ask for receptivity</p><p class=ti-1>cultivate: &ldquo;Openness Gentleness Kindness&rdquo;</p>",
 			"suffix": "",
 			"endnote": "<p>The refrain &ldquo;Openness Gentleness Kindness&rdquo; comes from Pema Chodron, The Wisdom of No Escape</p>"
 		},
@@ -323,7 +338,7 @@
 			"id":44,
 			"set": "shame",
 			"view": "",
-			"contents": "<p>shame is the language of the oppressor&mdash;resist!</p><p class=ti-1>even if&mdash;especially if&mdash;it's in my own head</p>",
+			"contents": "<p>shame is the language of the oppressor&mdash;resist!</p><p class=ti-1>even if&mdash;especially if&mdash;it's in your own head</p>",
 			"suffix": "",
 			"endnote": ""
 		},
@@ -339,7 +354,7 @@
 			"id":46,
 			"set": "presence",
 			"view": "",
-			"contents": "<p>STOP forcing myself to do what I should</p><p>DO only that which I want to</p><p class=ti-1>that which gives me pleasure</p>",
+			"contents": "<p>STOP forcing yourself to do what you should</p><p>DO only that which you want to</p><p class=ti-1>that which gives you pleasure</p>",
 			"suffix": "",
 			"endnote": ""
 		}

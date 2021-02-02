@@ -21,9 +21,9 @@
 	function show_set_selections() {
 		// Populate dropdown for set selection
 		let HTMLString = "<select id='setselector'" +
-			"value='thedefault'" +
+			"value='' class='setselector'" +
 			"onchange=show_selected_set()>" + 
-			"<option>Select One Set</option>";
+			"<option selected disabled hidden>Select One Set</option>";
 		let list_of_sets = get_list_of_sets();
 		for (let i=0; i<list_of_sets.length; i++) {
 			let setname = list_of_sets[i];
@@ -152,7 +152,7 @@
 <div class=article>
     <p><em>These are sayings I say to myself<br>
     in order to calm and center my consciousness<br>
-    especially during episodes of withdrawl or anxiety.</em></p>
+    especially during episodes of anxiety or withdrawl</em></p>
     <p></p>
 </div>
 
