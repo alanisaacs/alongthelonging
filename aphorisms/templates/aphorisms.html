@@ -9,12 +9,14 @@
 	function display_article(contents_and_endnotes) {
 		// Display contents on the page
 		// Pass in an array [contents, endnotes]
-		HTMLString = "<div class=article>" + contents_and_endnotes[0];
+		//OLD: HTMLString = "<div class=article>" + contents_and_endnotes[0];
+		let HTMLString = "";
+		HTMLString += contents_and_endnotes[0];
 		if (contents_and_endnotes[1]) {
 			HTMLString += "<div class=endnotes><p>NOTES</p>" + 
 				contents_and_endnotes[1] + "</div>";
 		}
-		HTMLString += "</div>"
+		//OLD: HTMLString += "</div>"
 		displaybox.innerHTML = HTMLString;
 	}
 
@@ -22,8 +24,8 @@
 		// Populate dropdown for set selection
 		let HTMLString = "<select id='setselector'" +
 			"value='' class='setselector'" +
-			"onchange=show_selected_set()>" + 
-			"<option selected disabled hidden>Select One Set</option>";
+			"onchange=show_selected_set()>";
+			//OLD: "<option selected disabled hidden>Select One Category</option>";
 		let list_of_sets = get_list_of_sets();
 		for (let i=0; i<list_of_sets.length; i++) {
 			let setname = list_of_sets[i];
@@ -43,6 +45,14 @@
 		// Display aphorisms associated with view
 		// Include suffixes
 		let aphos_in_flow = "";
+		// Rename "flow" in subheader to "My Favorite Flow"
+		let subheading = "";
+		if (viewname == "flow") {
+			subheading = "my favorite flow";
+		} else {
+			subheading = viewname;
+		}
+		aphos_in_flow += "<div class=set_header>" + subheading + "</div>";
 		let endnotes = "";
 		// For each aphorism
 		{% for a in aphos["aphorisms"] %}
@@ -127,17 +137,22 @@
 		let rndnum = Math.floor(Math.random() * numaphos);
 		let counter = 1;
 		let aphofound = false;
-		let apho_to_show = "";
+		let apho_contents = "";
+		let apho_endnotes = "";
 		{% for a in aphos.aphorisms %}
 			if (counter == rndnum) {
 				if (aphofound == false) {
-					apho_contents = "{{ a.contents|safe }}";
-					apho_endnotes= "{{ a.endnote|safe }}"
+					apho_contents += "<div class=set_header>" + 
+						"one for you</div>";
+					apho_contents += "<div class=apho>";
+					apho_contents += "{{ a.contents|safe }}";
+					apho_contents += "</div>";
+					apho_endnotes += "{{ a.endnote|safe }}";
 					aphofound = true;
 				}
 				// Jinja does not seem to support
 				//     breaking out of loops
-				//     "|first" does not work
+				//     "|first" does not work for me
 			} else {
 				counter++;
 			}
@@ -150,25 +165,28 @@
 <div class=bar_header>Aphorisms for the Neurodivergent</div>
 
 <div class=article>
-    <p><em>These are sayings I say to myself<br>
-    in order to calm and center my consciousness<br>
-    especially during episodes of anxiety or withdrawl</em></p>
-    <p></p>
-</div>
+	<div class=explainer>
+		<p>These are sayings I say to myself<br>
+		in order to calm and center my consciousness<br>
+		especially during episodes of anxiety or withdrawl</p>
+    </div>
 
-<div class=bar_action>
-	<button onclick="show_view('flow')">The Basic Flow</button> 
-	<button id=select_set>
-		<script>show_set_selections()</script>
-	</button>
-	<button onclick="show_one_set_random()">One Random Set</button>
-	<button onclick="show_all_by_set()">All by Set</button> 
-	<button onclick="show_random_one()">Random One</button>
-	<!-- TODO: <button onclick="show_random_all()">Random All</button> -->
-</div>
+	<div class=bar_action>
+		<button onclick="show_view('flow')">My Favorite Flow</button> 
+		<button onclick="show_one_set_random()">One Random Category</button>
+		<button onclick="show_all_by_set()">All by Category</button> 
+		<button onclick="show_random_one()">Random One</button>
+		<p>Choose a Category:
+			<button id=select_set>
+				<script>show_set_selections()</script>
+			</button>
+		</p>
+		<!-- TODO: <button onclick="show_random_all()">Random All</button> -->
+	</div>
 
-<div id="displaybox">
-	<script>show_view("flow");</script>
-</div>
+	<div id="displaybox">
+		<script>show_view("flow");</script>
+	</div>
 
+</div> <!--This ends the article div-->
 {% endblock %}
