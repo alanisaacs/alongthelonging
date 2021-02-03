@@ -156,7 +156,7 @@
 			"id": 20,
 			"set": "wrongness",
 			"view": "",
-			"contents": "<p>hone your awareness of wrongful mechanisms</p>",
+			"contents": "<p>Can you live in the world</p><p class=ti-1>where nothing is wrong?</p>",
 			"suffix": "",
 			"endnote": ""
 		},
@@ -164,7 +164,15 @@
 			"id": 21,
 			"set": "wrongness",
 			"view": "",
-			"contents": "<p>accept the wrongness</p><p class=ti-1>feel the pain</p><p>that is the way to compassion</p>",
+			"contents": "<p>when everything feels wrong</p><p class=ti-1>it is a judgment-mechanism</p><p class=ti-2>it is not part of you</p>",
+			"suffix": "",
+			"endnote": ""
+		},
+	{
+			"id": 23,
+			"set": "compassion",
+			"view": "",
+			"contents": "<p>feel the pain</p><p class=ti-1>that is the way to compassion</p>",
 			"suffix": "",
 			"endnote": ""
 		},
@@ -172,15 +180,7 @@
 			"id": 22,
 			"set": "feeling",
 			"view": "",
-			"contents": "<p>when it hurts to decide between the virulent possibilities</p></p class=ti-1>&mdash;do nothing</p>",
-			"suffix": "",
-			"endnote": ""
-		},
-		{
-			"id": 24,
-			"set": "compassion",
-			"view": "",
-			"contents": "<p>the highest good is taking care of myself</p>",
+			"contents": "<p>when it hurts to decide between the virulent possibilities</p><p class=ti-1>do nothing</p>",
 			"suffix": "",
 			"endnote": ""
 		},
@@ -194,7 +194,7 @@
 		},		
 		{
 			"id": 26,
-			"set": "action",
+			"set": "presence",
 			"view": "",
 			"contents": "<p>follow your nose around</p>",
 			"suffix": "",
@@ -204,7 +204,15 @@
 			"id": 27,
 			"set": "slow",
 			"view": "",
-			"contents": "<p>slow down</p><p>I'm in no hurry</p><p>I have no future projection</p>",
+			"contents": "<p>slow down</p>",
+			"suffix": "",
+			"endnote": ""
+		},
+		{
+			"id": 39,
+			"set": "slow",
+			"view": "",
+			"contents": "<p>I'm in no hurry</p><p>I have no future projection</p>",
 			"suffix": "",
 			"endnote": ""
 		}, 
@@ -234,7 +242,7 @@
 		},
 		{
 			"id":31,
-			"set": "action",
+			"set": "openness",
 			"view": "",
 					"contents": "<p>don't decide the little choices</p><p class=ti-1>let them happen on their own</p><p class=ti-2>let go of control</p><p class=ti-1>let the decisions come to you</p>",
 			"suffix": "",
@@ -244,7 +252,7 @@
 			"id":32,
 			"set": "openness",
 			"view": "",
-			"contents": "<p>anxiety doesn't serve me</p><p class=ti-1>it shuts off my connections</p><p class=ti-1>so give way and feel under</p>",
+			"contents": "<p>anxiety doesn't serve you</p><p class=ti-1>it shuts off your connections</p><p class=ti-1>so give way and feel under</p>",
 			"suffix": "",
 			"endnote": ""
 		},
@@ -258,7 +266,7 @@
 		},
 		{
 			"id":34,
-			"set": "awareness",
+			"set": "presence",
 			"view": "",
 			"contents": "<p>my higher power is the endless now</p>",
 			"suffix": "",
@@ -284,7 +292,7 @@
 			"id":37,
 			"set": "wrongness",
 			"view": "",
-			"contents": "<p>I'm not doing anything wrong</p><p class=ti-1>I can do no wrong</p>",
+			"contents": "<p>I'm not doing anything wrong</p><p class=ti-1>everything (I could do)</p><p class=ti-1>is already correct</p>",
 			"endnote": ""
 		},
 		{
@@ -295,18 +303,10 @@
 			"endnote": ""
 		},
 		{
-			"id":39,
-			"set": "wrongness",
-			"view": "",
-			"contents": "<p>everything (I could do)</p><p class=ti-1>is already correct</p>",
-			"suffix": "",
-			"endnote": ""
-		},
-		{
 			"id":40,
 			"set": "wrongness",
 			"view": "",
-			"contents": "<p>every moment is exactly perfect</p><p>including those when I feel</p><p class=ti-1>only fear, shame, hyper-vigilance</p><p>use that knowledge to feel under the fear</p><p class=ti-1>and let go</p><p class=ti-1>still perfect</p><p class=ti-2>regardless of result</p>",
+			"contents": "<p>every moment is exactly perfect</p><p>including those when you feel</p><p class=ti-1>only fear, shame, hyper-vigilance</p><p>use that knowledge to feel under the fear</p><p class=ti-1>and let go</p><p class=ti-1>still perfect</p><p class=ti-2>regardless of result</p>",
 			"suffix": "",
 			"endnote": ""
 		},
@@ -320,7 +320,7 @@
 		},
 		{
 			"id":42,
-			"set": "awareness",
+			"set": "presence",
 			"view": "",
 			"contents": "<p>take breath</p><p>exhale</p><p class=ti-1>let go all time</p>",
 			"suffix": "",
@@ -338,15 +338,23 @@
 			"id":44,
 			"set": "shame",
 			"view": "",
-			"contents": "<p>shame is the language of the oppressor&mdash;resist!</p><p class=ti-1>even if&mdash;especially if&mdash;it's in your own head</p>",
+			"contents": "<p>shame is the language of the oppressor</p><p class=ti-1>Resist!</p><p>even if&mdash;especially if&mdash;it's in your own head</p>",
 			"suffix": "",
 			"endnote": ""
 		},
 		{
 			"id":45,
-			"set": "acceptance",
+			"set": "presence",
 			"view": "",
 			"contents": "<p>trust in the What</p><p class=ti-1>and the Why will answer itself</p>",
+			"suffix": "",
+			"endnote": ""
+		},
+		{
+			"id": 39,
+			"set": "compassion",
+			"view": "",
+			"contents": "<p>the highest good is taking care of myself</p>",
 			"suffix": "",
 			"endnote": ""
 		},
