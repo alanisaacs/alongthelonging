@@ -6,26 +6,33 @@
 // Scripts for displaying aphorisms
 // (Unfortunately Jinja won't read from an external js file)
 
-	function display_article(contents_and_endnotes) {
+	function display_article(contents_and_endnotes, mode) {
 		// Display contents on the page
-		// Pass in an array [contents, endnotes]
-		//OLD: HTMLString = "<div class=article>" + contents_and_endnotes[0];
+		// Pass in an array: contents_and_endnotes is [contents, endnotes]
+		// Also pass "mode", which allows resetting selector
 		let HTMLString = "";
 		HTMLString += contents_and_endnotes[0];
 		if (contents_and_endnotes[1]) {
 			HTMLString += "<div class=endnotes><p>NOTES</p>" + 
 				contents_and_endnotes[1] + "</div>";
 		}
-		//OLD: HTMLString += "</div>"
+		if (mode != "leave_selector") {
+				reset_selector();
+		}
 		displaybox.innerHTML = HTMLString;
+	}
+
+	function reset_selector() {
+		// reset set selector so same-as-last category is selectable
+		document.getElementById("setselector").value = "-- Select --";
 	}
 
 	function show_set_selections() {
 		// Populate dropdown for set selection
 		let HTMLString = "<select id='setselector'" +
 			"value='' class='setselector'" +
-			"onchange=show_selected_set()>";
-			//OLD: "<option selected disabled hidden>Select One Category</option>";
+			"onchange=show_selected_set()>" +
+			"<option selected disabled hidden>-- Select --</option>";
 		let list_of_sets = get_list_of_sets();
 		for (let i=0; i<list_of_sets.length; i++) {
 			let setname = list_of_sets[i];
@@ -38,7 +45,8 @@
 
 	function show_selected_set() {
 		let setname = document.getElementById("setselector").value;
-		show_one_set(setname);
+		let mode = "leave_selector";
+		show_one_set(setname, mode);
 	}
 
 	function show_view(viewname) {
@@ -86,18 +94,19 @@
 		return (contents_and_endnotes);
 	}
 		
-	function show_one_set(setname) {
+	function show_one_set(setname, mode) {
 		let contents_and_endnotes = get_one_set(setname);
 		contents_and_endnotes[0] = "<div class=set_header>" + 
 			setname + "</div>" + contents_and_endnotes[0];
-		display_article(contents_and_endnotes);
+		display_article(contents_and_endnotes, mode);
 	}
 
 	function show_one_set_random() {
 		let list_of_sets = get_list_of_sets();
 		let rndnum = Math.floor(Math.random() * list_of_sets.length);
 		let setname = list_of_sets[rndnum];
-		show_one_set(setname);
+		let mode = "reset_selector";
+		show_one_set(setname, mode);
 	}
 
 	function get_list_of_sets() {
@@ -168,7 +177,7 @@
 	<div class=explainer>
 		<p>These are sayings I say to myself<br>
 		in order to calm and center my consciousness<br>
-		especially during episodes of anxiety or withdrawl</p>
+		especially during episodes of anxiety or withdrawal</p>
     </div>
 
 	<div class=bar_action>
