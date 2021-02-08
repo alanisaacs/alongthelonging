@@ -94,48 +94,6 @@ table, th, td {
   text-align: center;
 }
 
-/* ======= Form buttons ======= */
-
-.button {
-  background-color: black;
-  border-radius: 4px;
-  color: white;
-  cursor: pointer;
-  display: inline-block;
-  padding: 0px 6px;
-  text-align: center;
-  text-decoration: none;
-}
-
-.button_edit {
-  background-color: #ffffbb; 
-  color: purple; 
-}
-
-.button_edit:hover {
-  background-color: plum;
-}
-
-.button_edit:active {
-  background-color: purple;
-  color: plum;
-}
-
-.button_delete {
-  background-color: silver; 
-  color: #303030; 
-}
-
-.button_delete:hover {
-  background-color: #979297;
-}
-
-.button_delete:active {
-  background-color: #303030;
-  color: #979797;
-}
-
-
 /* ======= Flash Messages from Flask ======= */
 
 .flash_messages {

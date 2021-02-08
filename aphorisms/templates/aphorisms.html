@@ -143,14 +143,14 @@
 
 	function show_random_one() {
 		let numaphos = "{{ aphos.aphorisms|length }}";
-		let rndnum = Math.floor(Math.random() * numaphos);
+		let rndnum = Math.floor(Math.random() * numaphos) + 1;
 		let counter = 1;
 		let aphofound = false;
 		let apho_contents = "";
 		let apho_endnotes = "";
 		{% for a in aphos.aphorisms %}
-			if (counter == rndnum) {
-				if (aphofound == false) {
+		if (counter == rndnum) {
+			if (aphofound == false) {
 					apho_contents += "<div class=set_header>" + 
 						"one for you</div>";
 					apho_contents += "<div class=apho>";

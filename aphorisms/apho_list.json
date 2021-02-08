@@ -351,7 +351,7 @@
 			"endnote": ""
 		},
 		{
-			"id": 39,
+			"id": 47,
 			"set": "compassion",
 			"view": "",
 			"contents": "<p>the highest good is taking care of myself</p>",
@@ -363,6 +363,29 @@
 			"set": "presence",
 			"view": "",
 			"contents": "<p>STOP forcing yourself to do what you should</p><p>DO only that which you want to</p><p class=ti-1>that which gives you pleasure</p>",
+			"suffix": "",
+			"endnote": ""
+		},
+		{
+			"id":48,
+			"set": "liberation",
+			"view": "",
+			"contents": "<p>suspend evaluation</p><p class=ti-1>that cacophony of judgment</p>",
+			"suffix": "",
+			"endnote": ""
+		},
+		{
+			"id":49,
+			"set": "liberation",
+			"view": "",
+			"contents": "<p>liberation is the feeling</p><p class=ti-1>when all constraints fall away</p><p>and my powers expand</p><p class=ti-1>and proudly burst forth</p>",
+			"suffix": "",
+			"endnote": ""
+		},
+		{	"id":50,
+			"set": "liberation",
+			"view": "",
+			"contents": "<p>take up space</p>",
 			"suffix": "",
 			"endnote": ""
 		}
