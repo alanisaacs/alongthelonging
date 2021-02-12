@@ -53,23 +53,15 @@
 			"set": "awareness",
 			"view": "flow",
 			"contents": "<p>all things pass even to die</p>",
-			"suffix": "<p>&nbsp;</p>",
+			"suffix": "",
 			"endnote": ""
 		},
 		{
 			"id": 8,
 			"set": "awareness",
 			"view": "flow",
-			"contents": "<p>time slows</p><p>to the space of a breath</p>",
-			"suffix": "",
-			"endnote": ""
-		},
-		{
-			"id": 9,
-			"set": "awareness",
-			"view": "flow",
-			"contents": "<h4>this is AWARENESS</h4>",
-			"suffix": "<p>&nbsp;</p><p>&mdash;</p><p>&nbsp;</p>",
+			"contents": "<p>time slows</p><p class=ti-1>to the space of a breath</p>",
+			"suffix": "<p>&nbsp;</p><h4>this is AWARENESS</h4><p>&nbsp;</p><p>&mdash;</p><p>&nbsp;</p>",
 			"endnote": "<p>&ldquo;Awareness, Acceptance, and Action&rdquo; are known as the Three A&lsquo;s in twelve-step programs</p>"
 		},
 		{
@@ -85,23 +77,7 @@
 			"set": "acceptance",
 			"view": "flow",
 			"contents": "<p>if all I can do</p><p class=ti-1>is to sit</p><p class=ti-1>lost in confusion</p><p class=ti-2>then so be it</p>",
-			"suffix": "",
-			"endnote": ""
-		},
-		{
-			"id": 12,
-			"set": "acceptance",
-			"view": "flow",
-			"contents": "<h4>this is ACCEPTANCE</h4>",
-			"suffix": "<p>&nbsp;</p><p>&mdash;</p><p>&nbsp;</p>",
-			"endnote": ""
-		},
-		{
-			"id": 13,
-			"set": "action",
-			"view": "flow",
-			"contents": "<h4>then, arrive at an ACTION</h4>",
-			"suffix": "",
+			"suffix": "<p>&nbsp;</p><h4>this is ACCEPTANCE</h4><p>&nbsp;</p><p>&mdash;</p><p>&nbsp;</p><p>&nbsp;</p><h4>then, arrive at an ACTION</h4>",
 			"endnote": ""
 		},
 		{
