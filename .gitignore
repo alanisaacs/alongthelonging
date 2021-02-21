@@ -3,3 +3,7 @@
 **__pycache__/
 **test/
 **logs/
+
+# These files are hard links to eos/static; make all updates there
+static/scripts_all.js
+static/styles_all.css
