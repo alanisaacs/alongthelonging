@@ -169,7 +169,7 @@
 			"endnote": ""
 		},		
 		{
-			"id": 26,
+			"id": 51,
 			"set": "presence",
 			"view": "",
 			"contents": "<p>follow your nose around</p>",
@@ -241,7 +241,7 @@
 			"endnote": ""
 		},
 		{
-			"id":34,
+			"id":41,
 			"set": "presence",
 			"view": "",
 			"contents": "<p>my higher power is the endless now</p>",
@@ -287,7 +287,7 @@
 			"endnote": ""
 		},
 		{
-			"id":41,
+			"id":42,
 			"set": "presence",
 			"view": "",
 			"contents": "<p>I cannot force myself to exist</p><p class=ti-1>in the endless now</p><p class=ti-2>... however ...</p><p class=ti-1>it is easy</p>",
@@ -295,7 +295,7 @@
 			"endnote": ""
 		},
 		{
-			"id":42,
+			"id":26,
 			"set": "presence",
 			"view": "",
 			"contents": "<p>take breath</p><p>exhale</p><p class=ti-1>let go all time</p>",
