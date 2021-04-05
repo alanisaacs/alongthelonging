@@ -38,11 +38,6 @@ body {
 
 /* extends styles_all.css */
 .bar_header {
-	background-color: var(--body-background-color);
-	border-bottom: 1px solid #c0c0c0;
-	color: var(--main-title-color);
-	font-family: Garamond, serif;
-	font-size: 1.5em;
 	margin-top: 30px;
 }
 
