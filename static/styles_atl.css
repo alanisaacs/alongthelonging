@@ -10,6 +10,14 @@
 	--nav-item-hover-color: #ff6347;
 }
 
+/* ======= Media Rules ======= */
+
+@media (min-width): 500px {
+	body {
+		background-color: blue;
+	}
+}
+
 /* ======= Site Background Color ======= */
 
 body {
@@ -116,10 +124,25 @@ body {
 }
 
 /* Aphorism Specifics */
-
-.apho {
-	padding: 1rem 3rem;
+/* Reduce padding on narrower screens to maintain line breaks */
+@media only screen and (max-width: 400px) {
+    .apho {
+	    padding: 1rem 1rem;
+    }
 }
+@media only screen and (min-width: 400px) {
+    .apho {
+	    padding: 1rem 2rem;
+    }
+}
+@media only screen and (min-width: 600px) {
+    .apho {
+	    padding: 1rem 3rem;
+    }
+}
+
+
+
 
 .set_header {
 	background-color: #62257a;

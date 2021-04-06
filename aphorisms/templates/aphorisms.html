@@ -172,7 +172,14 @@
 </script>
 
 <div class=bar_header>Aphorisms for the Neurodivergent</div>
-
+<p id=showWidth>Width Here</p>
+<script>
+	window.addEventListener('resize', showWidth);
+	showWidth();
+	function showWidth() {
+		document.getElementById("showWidth").innerHTML = window.innerWidth;
+	}
+</script>
 <div class=article>
 	<div class=explainer>
 		<p>These are sayings I say to myself<br>
