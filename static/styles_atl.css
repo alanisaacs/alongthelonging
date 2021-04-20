@@ -28,6 +28,11 @@ body {
 
 /* ======= Page Layout ======= */
 
+td {
+	/* more table styles defined in styles_all.css */
+	vertical-align: top;
+}
+
 /* ======= Title and nav bar ======= */
 
 #main_title {

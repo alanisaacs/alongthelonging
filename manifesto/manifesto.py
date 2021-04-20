@@ -1,6 +1,12 @@
 from flask import (Blueprint,
                    render_template)
 
+from sqlalchemy import (asc,
+                        desc)
+
+from models import (Mani,
+                    open_db_session)                        
+
 manifesto_bp = Blueprint(
     'manifesto_bp', __name__,
     static_folder='static',
@@ -11,4 +17,8 @@ manifesto_bp = Blueprint(
 @manifesto_bp.route('/manifesto')
 def showManifesto():
     """Display manifesto page"""
-    return render_template('manifesto.html')
+    DBSession = open_db_session()
+    manis = DBSession.query(Mani).all()
+    DBSession.close()
+    return render_template('manifesto.html', manis=manis)
+
