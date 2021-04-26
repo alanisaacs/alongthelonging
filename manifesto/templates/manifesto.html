@@ -2,24 +2,41 @@
 
 {% block content %}
 
-<div class=bar_header>Poetic Manifesto</div>
-<table>
-	<tr>
-		<th>ID</th>
-		<th>SOUNDBITE</th>
-		<th>DESCRIPTION</th>
-		<th>NOTES</th>
-	</tr>
+<script>
+function create_manis() {
+	// Translate db object into JavaScript for processing
+	// Input: Manis database as Jinja2 object, all columns and rows
+	// Output: JavaScript Array of objects 
+	let ms = [];
+	let m = {};
 	{% for mani in manis %}
-		<tr>
-			<td>{{ mani.id }}</td>
-			<td>{{ mani.soundbite }}</td>
-			<td>{{ mani.description }}</td>
-			<td>{{ mani.notes }}</td>
-		</tr>
+		m = {};
+		// Using strings to avoid errors when value is None
+		m.id = "{{ mani.id }}";
+		m.gid = "{{ mani.gid }}";
+		m.gname = "{{ mani.gname }}";
+		m.soundbite = "{{ mani.soundbite }}";
+		m.description = "{{ mani.description }}";
+		m.notes = "{{ mani.notes }}";
+		m.keywords = "{{ mani.keywords }} ";
+		m.rank = "{{ mani.rank }}";
+		m.level = "{{ mani.level }}";
+		ms.push(m);
 	{% endfor %}
-</table>
+	return ms;
+}
+function display_default() {
+	// Display default columns in the Manifesto table
+	let manis_all = create_manis();
+	let t = document.getElementById("manis_table");
+	set_table(t, manis_all, 'id', 'soundbite', 'description', 'notes');
+}
+</script>
 
+<div class=bar_header>Poetic Manifesto</div>
+
+<table id=manis_table></table>
+<script>display_default()</script>
 
 <p><em>Version 2.0.1, 2021.04.20</em></p>
 
