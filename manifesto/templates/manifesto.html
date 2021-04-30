@@ -9,21 +9,33 @@ function create_manis() {
 	// Output: JavaScript Array of objects 
 	let ms = [];
 	let m = {};
+	let s = "";
 	{% for mani in manis %}
 		m = {};
-		// Using strings to avoid errors when value is None
-		m.id = "{{ mani.id }}";
-		m.gid = "{{ mani.gid }}";
-		m.gname = "{{ mani.gname }}";
-		m.soundbite = "{{ mani.soundbite }}";
-		m.description = "{{ mani.description }}";
-		m.notes = "{{ mani.notes }}";
-		m.keywords = "{{ mani.keywords }} ";
-		m.rank = "{{ mani.rank }}";
-		m.level = "{{ mani.level }}";
+		// Using tojson filter to keep tags and quotes
+		m.id = {{ mani.id|tojson }};
+		m.gid = {{ mani.gid|tojson }};
+		m.gname = {{ mani.gname|tojson }};
+		m.soundbite = {{ mani.soundbite|tojson }};
+		m.description = convert_chars({{ mani.description|tojson }});
+		m.notes = convert_chars({{ mani.notes|tojson }});
+		m.keywords = {{ mani.keywords|tojson }};
+		m.rank = {{ mani.rank|tojson }};
+		m.level = {{ mani.level|tojson }};
 		ms.push(m);
 	{% endfor %}
 	return ms;
+}
+function convert_chars(text) {
+	let s = text;
+	if (s) {    // Avoid errors when text is null
+		// Treat underscores around words as <em> tags
+		// Replace space+underscore+character
+		s = s.replace(/(\s)_(\w)/g, '$1<em>$2');
+		// Replace character+underscore+space/punctuation
+		s = s.replace(/(\w)_([\s,.;&)<])/g, '$1</em>$2');
+	}
+	return s;
 }
 function display_default() {
 	// Display default columns in the Manifesto table
@@ -37,7 +49,7 @@ function display_default() {
 
 <table id=manis_table></table>
 <script>display_default()</script>
-
+_
 <p><em>Version 2.0.1, 2021.04.20</em></p>
 
 {% endblock %}
