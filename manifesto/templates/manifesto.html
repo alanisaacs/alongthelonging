@@ -17,25 +17,14 @@ function create_manis() {
 		m.gid = {{ mani.gid|tojson }};
 		m.gname = {{ mani.gname|tojson }};
 		m.soundbite = {{ mani.soundbite|tojson }};
-		m.description = convert_chars({{ mani.description|tojson }});
-		m.notes = convert_chars({{ mani.notes|tojson }});
+		m.description = convertUserMarkup({{ mani.description|tojson }});
+		m.notes = convertUserMarkup({{ mani.notes|tojson }});
 		m.keywords = {{ mani.keywords|tojson }};
 		m.rank = {{ mani.rank|tojson }};
 		m.level = {{ mani.level|tojson }};
 		ms.push(m);
 	{% endfor %}
 	return ms;
-}
-function convert_chars(text) {
-	let s = text;
-	if (s) {    // Avoid errors when text is null
-		// Treat underscores around words as <em> tags
-		// Replace space+underscore+character
-		s = s.replace(/(\s)_(\w)/g, '$1<em>$2');
-		// Replace character+underscore+space/punctuation
-		s = s.replace(/(\w)_([\s,.;&)<])/g, '$1</em>$2');
-	}
-	return s;
 }
 function display_default() {
 	// Display default columns in the Manifesto table

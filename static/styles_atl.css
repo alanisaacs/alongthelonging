@@ -51,6 +51,7 @@ td {
 
 /* extends styles_all.css */
 .bar_header {
+	font-size: 1.75em;
 	margin-top: 30px;
 }
 
@@ -88,13 +89,19 @@ td {
 }
 
 .article h3 {
-	font-size: 1.5em;
+	color: var(--nav-item-color);
+	font-size: 1.25em;
 	margin-left: .5rem;
+}
+
+/* Make content narrow under h3s */
+.narrow {
+	margin-left: 4rem;
+	margin-right: 4rem;
 }
 
 .article h4 {
 	font-weight: bold;
-	font-size: 1.2em;
 } 
 
 .explainer {
@@ -145,9 +152,6 @@ td {
 	    padding: 1rem 3rem;
     }
 }
-
-
-
 
 .set_header {
 	background-color: #62257a;

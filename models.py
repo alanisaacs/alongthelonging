@@ -2,6 +2,8 @@
 
 """ Database models for ATL Apps """
 
+import os
+
 from sqlalchemy import create_engine, Column, Integer, String, Text
 from sqlalchemy.dialects.postgresql import ARRAY
 from sqlalchemy.ext.declarative import declarative_base
@@ -24,10 +26,9 @@ class Mani(Base):
     level = Column(Integer)
 
 # Create interface to db without connecting
-# TODO: Use env var for pw
-pw = '7liminE##'
+pw = os.getenv('ATL_DB_USER_PW')
 pw_encoded = urllib.parse.quote_plus(pw)
-engine = create_engine('postgresql://whitman:' + pw_encoded + \
+engine = create_engine('postgresql://atl_dbuser:' + pw_encoded + \
     '@localhost/manifesto')
 # Create a session (not a connection, more a "workspace" for objects)
 open_db_session = sessionmaker(bind=engine)
