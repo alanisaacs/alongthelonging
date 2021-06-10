@@ -169,14 +169,6 @@
 			"endnote": ""
 		},		
 		{
-			"id": 51,
-			"set": "presence",
-			"view": "",
-			"contents": "<p>follow your nose around</p>",
-			"suffix": "",
-			"endnote": ""
-		},
-		{
 			"id": 27,
 			"set": "slow",
 			"view": "",
@@ -185,15 +177,15 @@
 			"endnote": ""
 		},
 		{
-			"id": 39,
+			"id":52,
 			"set": "slow",
 			"view": "",
-			"contents": "<p>I'm in no hurry</p><p>I have no future projection</p>",
+			"contents": "<p>I'm in no hurry</p><p class=ti-1>I have no future projection</p>",
 			"suffix": "",
 			"endnote": ""
 		}, 
 		{
-			"id": 28,
+			"id": 39,
 			"set": "slow",
 			"view": "",
 			"contents": "<p>take time to heal</p>",
@@ -362,6 +354,22 @@
 			"set": "liberation",
 			"view": "",
 			"contents": "<p>take up space</p>",
+			"suffix": "",
+			"endnote": ""
+		},
+		{
+			"id": 51,
+			"set": "presence",
+			"view": "",
+			"contents": "<p>follow your nose around</p>",
+			"suffix": "",
+			"endnote": ""
+		},
+		{
+			"id": 28,
+			"set": "slow",
+			"view": "",
+			"contents": "<p>you don't have to DO anything</p>",
 			"suffix": "",
 			"endnote": ""
 		}
