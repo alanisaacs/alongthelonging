@@ -189,3 +189,82 @@ button:active {
 	background-color: var(--body-background-color);
 	color: var(--nav-item-color);
 }
+
+/* ======= Manifesto ======= */
+/* Copied from tfb for now */
+
+.articleIntro {
+    padding: .5rem;
+}
+
+.articleNav {
+    margin-bottom: 1.5rem;
+    padding: .5rem;
+}
+
+.articleBtn {
+	border: 1px solid #727272;
+	color: #555555;
+    float: right;
+    margin-left: 1rem;
+	font-size: small;
+	padding: 1px 6px;
+}
+
+.collectionBox {
+    padding: 10px;
+}
+
+.itemBox {
+    border-top: 1px solid black;
+    font-size: x-large;
+    font-weight: bold;
+    padding: 1rem;
+}
+
+.itemDesc {
+    font-size: medium;
+    font-weight: normal;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+    padding-left: 2rem;
+}
+
+.itemNotes {
+    font-size: medium;
+    font-weight: normal;
+    padding: 1rem 2rem;
+}
+
+.notesBox {
+    border: 1px solid darkred;
+    margin: 1rem 3rem;
+}
+
+.notesBar {
+    background-color: darkred;
+    color: white;
+    font-size: medium;
+    padding-top: .25rem;
+    padding-bottom: .25rem;
+    padding-left: 1rem;
+}
+
+.notesListBody {
+    padding-right: 1.5rem;
+}
+
+.showHideButton {
+	border: 1px solid #727272;
+	color: #555555;
+    float: right;
+    font-size: x-small;
+	padding: 1px 6px;
+    text-align: right;
+    vertical-align: top;
+}
+
+.showHideBtnBar {
+    margin-bottom: 1.5rem;
+    margin-right: 3rem;
+}

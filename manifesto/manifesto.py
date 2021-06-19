@@ -18,7 +18,7 @@ manifesto_bp = Blueprint(
 def showManifesto():
     """Display manifesto page"""
     DBSession = open_db_session()
-    manis = DBSession.query(Mani).all()
+    manis = DBSession.query(Mani).order_by('id').all()
     DBSession.close()
     return render_template('manifesto.html', manis=manis)
 
