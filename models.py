@@ -4,6 +4,7 @@
 
 import os
 
+from flask_login import UserMixin
 from sqlalchemy import create_engine, Column, Integer, String, Text
 from sqlalchemy.dialects.postgresql import ARRAY
 from sqlalchemy.ext.declarative import declarative_base
@@ -25,11 +26,18 @@ class Mani(Base):
     rank = Column(Integer)
     level = Column(Integer)
 
+class User(UserMixin, Base):
+    """Registered user information"""
+    __tablename__ = 'users'
+    id = Column(Integer, primary_key=True)
+    username = Column(String(64), nullable=False)
+    password = Column(String(1024))
+
 # Create interface to db without connecting
 pw = os.getenv('ATL_DB_USER_PW')
 pw_encoded = urllib.parse.quote_plus(pw)
 engine = create_engine('postgresql://atl_dbuser:' + pw_encoded + \
-    '@localhost/manifesto')
+    '@localhost/atl')
 # Create a session (not a connection, more a "workspace" for objects)
 open_db_session = sessionmaker(bind=engine)
 # To be made available throughout the app using syntax:
