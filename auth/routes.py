@@ -74,14 +74,14 @@ def check_password(hashed_password, user_password):
  
 # Manage Users
 @auth_bp.route('/usermgmt')
-#@login_required
+@login_required
 def atlUserMgmt():
     """ Manage users """
     return render_template('/usermgmt.html')
 
 # Create new user
 @auth_bp.route('/atlNewUser', methods=['GET', 'POST'])
-#@login_required
+@login_required
 def atlNewUser():
     """ Create new user with hashed password in db """
     if request.method == 'POST':
