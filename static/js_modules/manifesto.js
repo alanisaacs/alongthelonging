@@ -1,6 +1,13 @@
-// JavaScript for Along the Longing
+/* JavaScript for Manifesto */
 
-// ======= Manifesto =======
+function initManifesto() {
+    // Code required to load page, called from main.js
+    const maniBox = document.getElementById('maniBox');
+    displayDefault(maniBox.manis);
+    // Add listeners to buttons on the page
+    document.getElementById('toggleShowAllNotes').addEventListener(
+        'click', toggleShowAllNotes);
+}
 
 // Default Display
 // Cribbed from tools in tfb
@@ -9,7 +16,7 @@ function displayDefault(manisAll) {
     // The whole container is defined in the html
     const maniBox = document.getElementById('maniBox');
     maniBox.className = 'collectionBox';
-    for (mani of manisAll) {
+    for (let mani of manisAll) {
         // DIV for mani with id & soundbite at top
         const mBox = document.createElement('div');
         mBox.className = 'itemBox';
@@ -107,7 +114,7 @@ function set_table(table, data, ...cols) {
 	// Create header row with column names inside
 	let thead = table.createTHead();
 	let row = thead.insertRow(-1);
-	for (col of cols) {
+	for (let col of cols) {
 		let th = document.createElement('th');
 		let text = document.createTextNode(col.toUpperCase());
 		th.appendChild(text);
@@ -115,10 +122,12 @@ function set_table(table, data, ...cols) {
 	}
 	// Write each row of data into the table body
 	let tbody = table.createTBody();
-	for (d of data) {
+	for (let d of data) {
 		row = tbody.insertRow(-1);
 		for (col of cols) {
 			row.insertCell(-1).innerHTML = d[col];
 		}
 	}
 }
+
+export { initManifesto };

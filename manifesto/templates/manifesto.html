@@ -2,12 +2,24 @@
 
 {% block content %}
 
+<div class=bar_header>Poetic Manifesto</div>
+
+<div class=article>
+    <div class=articleIntro>
+        It is what is it.
+    </div>
+    <div class=articleNav>
+        <button class='articleBtn' id='toggleShowAllNotes'>
+            Show/Hide All Notes</button>
+    </div>    
+    <div id='maniBox'></div>
+</div>
+_
+<p><em>Version 2.0.1, 2021.04.20</em></p>
+
 <script>
-function createManis() {
-	// Translate db object into JavaScript for processing
-	// Input: Manis database as Jinja2 object, all columns and rows
-	// Output: JavaScript Array of objects 
-	let ms = [];
+	// Write data into array of objects attached to maniBox 
+	let maniList = [];
 	let m = {};
 	let s = "";
 	{% for mani in manis %}
@@ -22,38 +34,10 @@ function createManis() {
 		m.keywords = {{ mani.keywords|tojson }};
 		m.rank = {{ mani.rank|tojson }};
 		m.level = {{ mani.level|tojson }};
-		ms.push(m);
+		maniList.push(m);
 	{% endfor %}
-	return ms;
-}
-function displayManifesto() {
-	// Display default columns in the Manifesto table
-	let manisAll = createManis();
-	// Table version
-	//let t = document.getElementById("manis_table");
-	//set_table(t, manis_all, 'id', 'soundbite', 'description', 'notes');
-	displayDefault(manisAll)
-}
+	const mBox = document.getElementById('maniBox');
+	mBox.manis = maniList;
 </script>
-
-<div class=bar_header>Poetic Manifesto</div>
-<!-- Table Version
-<table id=manis_table></table> -->
-
-<div class=article>
-    <div class=articleIntro>
-        It is what is it.
-    </div>
-    <div class=articleNav>
-        <button class='articleBtn' 
-            onclick="toggleShowAllNotes()">
-            Show/Hide All Notes</button>
-    </div>    
-    <div id='maniBox'></div>
-</div>
-
-<script>displayManifesto()</script>
-_
-<p><em>Version 2.0.1, 2021.04.20</em></p>
 
 {% endblock %}
