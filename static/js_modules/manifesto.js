@@ -1,5 +1,7 @@
 /* JavaScript for Manifesto */
 
+import { EditElement } from "./editElement.js";
+
 function initManifesto() {
     // Code required to load page, called from main.js
     const maniBox = document.getElementById('maniBox');
@@ -26,7 +28,16 @@ function displayDefault(manisAll) {
         const mDesc = document.createElement('div');
         mDesc.className = 'itemDesc';
         mDesc.innerHTML = mani.description;
+        // Add an edit button if user is authenticated
+        if (maniBox.authStatus.editOK) {
+            const editBtn = document.createElement('button');
+            editBtn.className = 'editBtn';
+            editBtn.innerText = 'edit';
+            editBtn.addEventListener('click', (ev) => makeEditable(ev));
+            mDesc.appendChild(editBtn);
+        }
         mBox.appendChild(mDesc);
+        // Add an edit button if the user is logged in
         // DIV for notes appended to mani
         // Construct notesBox by sending text to be inside
         let noteText = mani.notes;
@@ -128,6 +139,19 @@ function set_table(table, data, ...cols) {
 			row.insertCell(-1).innerHTML = d[col];
 		}
 	}
+}
+
+// Initialize editing mode
+
+function makeEditable(ev) {
+    // Create class instance to handle editing of text element
+    console.log(">> manifesto.js: makeEditable: top");
+    console.log(ev.target.parentElement);
+    // Note the event target is the button clicked
+    // so the element to edit is the button's parent
+    const editingElement = new EditElement(
+        ev.target.parentElement);
+    editingElement.init();
 }
 
 export { initManifesto };

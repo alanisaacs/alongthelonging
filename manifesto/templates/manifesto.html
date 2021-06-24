@@ -38,6 +38,18 @@ _
 	{% endfor %}
 	const mBox = document.getElementById('maniBox');
 	mBox.manis = maniList;
+	// Add flag to show whether user is authenticated
+	// Defining as property of object so it cannot be changed
+	let auth = false;
+	{% if current_user.is_authenticated %}
+		auth = true;
+	{% endif %}
+	let allowEdit = {};
+	Object.defineProperty(allowEdit, 'editOK', {
+		value: auth,
+		writable: false
+	});
+	mBox.authStatus = allowEdit;
 </script>
 
 {% endblock %}

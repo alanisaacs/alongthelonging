@@ -215,6 +215,25 @@ button:active {
     padding: 10px;
 }
 
+.editBtn {
+	background-color: pink;
+	border: 1px solid #727272;
+	color: #555555;
+    font-size: x-small;
+	margin-left: 1rem;
+	padding: 1px 6px;
+    text-align: right;
+    vertical-align: top;
+}
+
+.editMode {
+	background-color: palegoldenrod;
+	font-size: medium;
+	font-weight:normal;
+	padding: 1rem;
+	border: blue solid 1px;
+}
+
 .itemBox {
     border-top: 1px solid black;
     font-size: x-large;
