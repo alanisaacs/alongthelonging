@@ -145,8 +145,6 @@ function set_table(table, data, ...cols) {
 
 function makeEditable(ev) {
     // Create class instance to handle editing of text element
-    console.log(">> manifesto.js: makeEditable: top");
-    console.log(ev.target.parentElement);
     // Note the event target is the button clicked
     // so the element to edit is the button's parent
     const editingElement = new EditElement(

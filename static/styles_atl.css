@@ -216,6 +216,28 @@ button:active {
 }
 
 .editBtn {
+	background-color: lightskyblue;
+	border: 1px solid #727272;
+	color: #555555;
+    font-size: x-small;
+	margin-left: 1rem;
+	padding: 1px 6px;
+    text-align: right;
+    vertical-align: top;
+}
+
+.saveBtn {
+	background-color: palegreen;
+	border: 1px solid #727272;
+	color: #555555;
+    font-size: x-small;
+	margin-left: 1rem;
+	padding: 1px 6px;
+    text-align: right;
+    vertical-align: top;
+}
+
+.cancelBtn {
 	background-color: pink;
 	border: 1px solid #727272;
 	color: #555555;
