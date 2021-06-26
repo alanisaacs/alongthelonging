@@ -3,14 +3,16 @@
 class EditElement {
     constructor(ele) {
         this.editBox = ele;
-        this.editBtn = this.editBox.querySelector('.editBtn')
-        this.originalContent = ele.innerHTML;
     }
     
     init() {
         // Initialize instance; make element editable
         this.editBox.setAttribute('contentEditable', true);
+        this.originalContent = this.editBox.innerHTML;
+        this.originalClass = this.editBox.className;
         this.editBox.className = 'editMode';
+        this.editBar = this.editBox.nextElementSibling;
+        this.editBtn = this.editBar.querySelector('.editBtn');
         this.addSaveCancelBtns();
     }
 
@@ -21,19 +23,17 @@ class EditElement {
         const saveBtn = document.createElement('button');
         saveBtn.className = 'saveBtn';
         saveBtn.innerText = 'Save';
-        saveBtn.setAttribute('contentEditable', false);
         saveBtn.addEventListener('click', (ev) => {
             this.saveEdits();
         });
-        this.editBox.appendChild(saveBtn);
+        this.editBar.appendChild(saveBtn);
         const cancelBtn = document.createElement('button');
         cancelBtn.className = 'cancelBtn';
         cancelBtn.innerText = 'Cancel';
-        cancelBtn.setAttribute('contentEditable', false);
         cancelBtn.addEventListener('click', (ev) => {
             this.cancelEdits();
         });
-        this.editBox.appendChild(cancelBtn);
+        this.editBar.appendChild(cancelBtn);
     }
 
     saveEdits() {
@@ -41,7 +41,18 @@ class EditElement {
     }
 
     cancelEdits() {
-        console.log("Canceling Edits");
+        this.stopEditing();
+        this.editBox.innerHTML = this.originalContent;
+    }
+
+    stopEditing() {
+        // Remove Save & Cancel buttons, put back Edit
+        this.editBar.querySelector('.saveBtn').remove();
+        this.editBar.querySelector('.cancelBtn').remove();
+        this.editBtn.style.display = 'inline';
+        // Return element to normal state
+        this.editBox.setAttribute('contentEditable', false);
+        this.editBox.className = this.originalClass;
     }
 }
 

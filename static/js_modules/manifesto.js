@@ -28,16 +28,9 @@ function displayDefault(manisAll) {
         const mDesc = document.createElement('div');
         mDesc.className = 'itemDesc';
         mDesc.innerHTML = mani.description;
-        // Add an edit button if user is authenticated
-        if (maniBox.authStatus.editOK) {
-            const editBtn = document.createElement('button');
-            editBtn.className = 'editBtn';
-            editBtn.innerText = 'edit';
-            editBtn.addEventListener('click', (ev) => makeEditable(ev));
-            mDesc.appendChild(editBtn);
-        }
         mBox.appendChild(mDesc);
-        // Add an edit button if the user is logged in
+        // Add a control bar with buttons if user is authenticated
+        createEditBarAfter(mDesc);
         // DIV for notes appended to mani
         // Construct notesBox by sending text to be inside
         let noteText = mani.notes;
@@ -141,14 +134,30 @@ function set_table(table, data, ...cols) {
 	}
 }
 
-// Initialize editing mode
+function createEditBarAfter(ele) {
+    const maniBox = document.getElementById('maniBox');
+    if (maniBox.authStatus.editOK) {
+        const editBar = document.createElement('div');
+        editBar.className = 'editBar';
+        const editBtn = document.createElement('button');
+        editBtn.className = 'editBtn';
+        editBtn.innerText = 'Edit';
+        editBtn.addEventListener('click', (ev) => makeEditable(ev));
+        editBar.appendChild(editBtn);
+        // Append after ele in ele's parent's child list
+        // so ele be edited without including the editing controls
+        // Note if nextSibling is null then new node is appended to end
+        ele.parentNode.insertBefore(editBar, ele.nextSibling);
+    }
+}
 
 function makeEditable(ev) {
-    // Create class instance to handle editing of text element
+    // Initialize class instance to handle editing of text element
     // Note the event target is the button clicked
-    // so the element to edit is the button's parent
+    // so the element to edit is the previous sibling (content div)
+    // above the parent (editBar)
     const editingElement = new EditElement(
-        ev.target.parentElement);
+        ev.target.parentElement.previousSibling);
     editingElement.init();
 }
 
