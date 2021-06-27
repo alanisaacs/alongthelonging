@@ -37,7 +37,7 @@ class EditElement {
     }
 
     saveEdits() {
-        console.log("Saving Edits");
+        this.stopEditing;
     }
 
     cancelEdits() {

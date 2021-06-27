@@ -216,8 +216,7 @@ button:active {
 }
 
 .editBar {
-	background-color: orange;
-	/* display: inline; */
+	background-color: lightskyblue;
 }
 
 .editBtn {
@@ -236,32 +235,29 @@ button:active {
 	background-color: palegreen;
 	border: 1px solid #727272;
 	color: #555555;
-	float: right;
-    font-size: x-small;
+    font-size: small;
+	margin-bottom: .5rem;
 	margin-left: 1rem;
 	padding: 1px 6px;
     text-align: right;
-    vertical-align: top;
 }
 
 .cancelBtn {
 	background-color: pink;
 	border: 1px solid #727272;
 	color: #555555;
-	float: right;
-    font-size: x-small;
+    font-size: small;
+	margin-bottom: .5rem;
 	margin-left: 1rem;
 	padding: 1px 6px;
     text-align: right;
-    vertical-align: top;
 }
 
 .editMode {
 	background-color: palegoldenrod;
 	font-size: medium;
-	font-weight:normal;
+	font-weight: normal;
 	padding: 1rem;
-	border: blue solid 1px;
 }
 
 .itemBox {
@@ -269,6 +265,12 @@ button:active {
     font-size: x-large;
     font-weight: bold;
     padding: 1rem;
+}
+
+.soundbiteBox {
+	/* Show soundbite text next to id */
+	/* yet for some reason show under id when editing */
+	display: inline;
 }
 
 .itemDesc {

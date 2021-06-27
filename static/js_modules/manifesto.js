@@ -9,6 +9,15 @@ function initManifesto() {
     // Add listeners to buttons on the page
     document.getElementById('toggleShowAllNotes').addEventListener(
         'click', toggleShowAllNotes);
+    // If user is authenticated, show button to show/hide edit buttons
+    if (maniBox.authStatus.editOK) {
+        const btn = document.createElement('button');
+        btn.className = 'articleBtn';
+        btn.style.backgroundColor = 'lightskyblue';
+        btn.innerText = 'Show/Hide Edit Buttons';
+        btn.addEventListener('click', toggleShowEditBtns);
+        document.getElementById('articleNav').appendChild(btn);
+    }
 }
 
 // Default Display
@@ -22,7 +31,13 @@ function displayDefault(manisAll) {
         // DIV for mani with id & soundbite at top
         const mBox = document.createElement('div');
         mBox.className = 'itemBox';
-        mBox.innerHTML = `#${mani.id}: ${mani.soundbite}`;
+        mBox.innerHTML = `#${mani.id}: `;
+        // DIV for soundbite so it can be edited
+        const soundbiteBox = document.createElement('div');
+        soundbiteBox.className = 'soundbiteBox';
+        soundbiteBox.innerHTML = `${mani.soundbite}`;
+        mBox.appendChild(soundbiteBox);
+        createEditBarAfter(soundbiteBox);
         maniBox.appendChild(mBox);
         // DIV for description appended to mani
         const mDesc = document.createElement('div');
@@ -62,6 +77,7 @@ function createNotesBox(txt) {
     //noteTextBox.innerHTML = `<ul>${noteText}</ul>`;
 	noteTextBox.innerHTML = txt;
     nb.appendChild(noteTextBox);
+    createEditBarAfter(noteTextBox);
     return nb;
 }
 
@@ -110,6 +126,18 @@ function toggleShowAllNotes() {
     }
 }
 
+function toggleShowEditBtns() {
+    const editBtns = document.querySelectorAll('.editBtn');
+    let displayProp = editBtns[0].style.display;
+    for (let btn of editBtns) {
+        if (displayProp === 'none' ) {
+            btn.style.display = 'inline';
+        } else {
+            btn.style.display = 'none';
+        }
+    }
+}
+
 // Generic Table Functions
 
 function set_table(table, data, ...cols) {
@@ -134,6 +162,8 @@ function set_table(table, data, ...cols) {
 	}
 }
 
+// Editing triggers
+
 function createEditBarAfter(ele) {
     const maniBox = document.getElementById('maniBox');
     if (maniBox.authStatus.editOK) {
@@ -142,6 +172,7 @@ function createEditBarAfter(ele) {
         const editBtn = document.createElement('button');
         editBtn.className = 'editBtn';
         editBtn.innerText = 'Edit';
+        editBtn.style.display = 'none';
         editBtn.addEventListener('click', (ev) => makeEditable(ev));
         editBar.appendChild(editBtn);
         // Append after ele in ele's parent's child list
