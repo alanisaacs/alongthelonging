@@ -21,7 +21,6 @@ function initManifesto() {
 }
 
 // Default Display
-// Cribbed from tools in tfb
 function displayDefault(manisAll) {
     // Input: Array of objects; each object is a row in the db
     // The whole container is defined in the html
@@ -32,6 +31,8 @@ function displayDefault(manisAll) {
         const mBox = document.createElement('div');
         mBox.className = 'itemBox';
         mBox.innerHTML = `#${mani.id}: `;
+        // Store ID as attribute for easy retrieval while saving edits
+        mBox.setAttribute('maniID', `${mani.id}`);
         // DIV for soundbite so it can be edited
         const soundbiteBox = document.createElement('div');
         soundbiteBox.className = 'soundbiteBox';
@@ -71,7 +72,7 @@ function createNotesBox(txt) {
     // DIV for text of notes
     let noteTextBox = document.createElement('div');
     noteTextBox.className = 'itemNotes';
-    // Format the notes // REMOVED FOR NOW
+    // Format the notes // TODO: REMOVED FOR NOW
     //let noteText = convertUserMarkup(txt);
     //noteText = markup_multiline_notes(noteText);
     //noteTextBox.innerHTML = `<ul>${noteText}</ul>`;
@@ -127,13 +128,13 @@ function toggleShowAllNotes() {
 }
 
 function toggleShowEditBtns() {
-    const editBtns = document.querySelectorAll('.editBtn');
-    let displayProp = editBtns[0].style.display;
-    for (let btn of editBtns) {
+    const editBars = document.querySelectorAll('.editBar');
+    let displayProp = editBars[0].style.display;
+    for (let b of editBars) {
         if (displayProp === 'none' ) {
-            btn.style.display = 'inline';
+            b.style.display = 'inline-block';
         } else {
-            btn.style.display = 'none';
+            b.style.display = 'none';
         }
     }
 }
@@ -172,7 +173,7 @@ function createEditBarAfter(ele) {
         const editBtn = document.createElement('button');
         editBtn.className = 'editBtn';
         editBtn.innerText = 'Edit';
-        editBtn.style.display = 'none';
+        editBtn.style.display = 'inline';
         editBtn.addEventListener('click', (ev) => makeEditable(ev));
         editBar.appendChild(editBtn);
         // Append after ele in ele's parent's child list

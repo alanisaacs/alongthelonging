@@ -215,8 +215,20 @@ button:active {
     padding: 10px;
 }
 
+.editMode {
+	background-color: palegoldenrod;
+	border: solid black 1px;
+	/* Oddly display: inline-block makes newlines BR instead of DIV */
+	display: inline-block;
+	font-size: medium;
+	font-weight: normal;
+	padding: 1rem;
+	width: inherit;
+}
+
 .editBar {
-	background-color: lightskyblue;
+	display: inline-block;
+	width: 100%;
 }
 
 .editBtn {
@@ -251,13 +263,6 @@ button:active {
 	margin-left: 1rem;
 	padding: 1px 6px;
     text-align: right;
-}
-
-.editMode {
-	background-color: palegoldenrod;
-	font-size: medium;
-	font-weight: normal;
-	padding: 1rem;
 }
 
 .itemBox {

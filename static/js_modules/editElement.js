@@ -1,5 +1,8 @@
 /* Enable elements to be edited */
 
+import { convertUserMarkup, markupForDisplay, markupForEditing, 
+    markupMultilineNotes } from "./markups.js";
+
 class EditElement {
     constructor(ele) {
         this.editBox = ele;
@@ -11,6 +14,7 @@ class EditElement {
         this.originalContent = this.editBox.innerHTML;
         this.originalClass = this.editBox.className;
         this.editBox.className = 'editMode';
+        this.editBox.innerHTML = markupForEditing(this.originalContent);
         this.editBar = this.editBox.nextElementSibling;
         this.editBtn = this.editBar.querySelector('.editBtn');
         this.addSaveCancelBtns();
@@ -37,7 +41,52 @@ class EditElement {
     }
 
     saveEdits() {
-        this.stopEditing;
+        // Markup text for display and also storage
+        let newText = markupForDisplay(this.editBox.innerHTML);
+        // Get ID for record from itemBox (parent or parent's parent)
+        const maniID = this.editBox.closest('.itemBox').
+            getAttribute('maniID');
+        // Get name of DB column being edit
+        let colName = '';
+        switch (this.originalClass) {
+            case 'soundbiteBox':
+                colName = 'soundbite';
+                break;
+            case 'itemDesc':
+                colName = 'description';
+                break;
+            case 'itemNotes':
+                colName = 'notes';
+        }
+        // Format POST as json to keep formatting
+        let postjson = {'id': maniID};
+        postjson['colName'] = colName;
+        postjson['newText'] = newText;
+        // POST json to server
+        fetch('/saveEdits', {
+            method: 'POST',
+            headers: new Headers({"Content-Type": "application/json"}),
+            body: JSON.stringify(postjson)
+        })
+        .then(response => {
+            // First response is headers
+            return response.json();
+        })
+        .then(message => {
+            // Next response is returned by server function
+            if (message.status === 'ok') {
+                this.editBox.innerHTML = newText;
+            } else {
+                this.editBox.innerHTML = newText;
+                alert("Sorry, an error may have occured while saving." +
+                    " Try refreshing the page")
+            }
+        })
+        .catch(err => {
+            // This will catch 404s etc.
+            alert(`Unexpected Error: ${err}`);
+        });
+        this.stopEditing();
     }
 
     cancelEdits() {
