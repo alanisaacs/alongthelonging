@@ -1,6 +1,7 @@
 /* JavaScript for Manifesto */
 
 import { EditElement } from "./editElement.js";
+import { markupForDisplay } from "./markups.js";
 
 function initManifesto() {
     // Code required to load page, called from main.js
@@ -36,20 +37,20 @@ function displayDefault(manisAll) {
         // DIV for soundbite so it can be edited
         const soundbiteBox = document.createElement('div');
         soundbiteBox.className = 'soundbiteBox';
-        soundbiteBox.innerHTML = `${mani.soundbite}`;
+        soundbiteBox.innerHTML = markupForDisplay(mani.soundbite);
         mBox.appendChild(soundbiteBox);
         createEditBarAfter(soundbiteBox);
         maniBox.appendChild(mBox);
         // DIV for description appended to mani
         const mDesc = document.createElement('div');
         mDesc.className = 'itemDesc';
-        mDesc.innerHTML = mani.description;
+        mDesc.innerHTML = markupForDisplay(mani.description);
         mBox.appendChild(mDesc);
         // Add a control bar with buttons if user is authenticated
         createEditBarAfter(mDesc);
         // DIV for notes appended to mani
         // Construct notesBox by sending text to be inside
-        let noteText = mani.notes;
+        let noteText = markupForDisplay(mani.notes);
         const notesBox = createNotesBox(noteText);
         notesBox.setAttribute('hidden', true);
         // DIV with button for toggling visibility of notes
