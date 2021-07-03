@@ -2,6 +2,7 @@
 
 import { EditElement } from "./editElement.js";
 import { markupForDisplay } from "./markups.js";
+import { ControlBox } from "./controls.js";
 
 function initManifesto() {
     // Code required to load page, called from main.js
@@ -15,10 +16,24 @@ function initManifesto() {
         const btn = document.createElement('button');
         btn.className = 'articleBtn';
         btn.style.backgroundColor = 'lightskyblue';
-        btn.innerText = 'Show/Hide Edit Buttons';
+        btn.innerText = 'Edit Buttons';
         btn.addEventListener('click', toggleShowEditBtns);
         document.getElementById('articleNav').appendChild(btn);
     }
+    // Add button to open controls area
+    const toggleShowControlAreaBtn = document.createElement('button');
+    toggleShowControlAreaBtn.innerText = 'Show/Hide Filters';
+    toggleShowControlAreaBtn.className = 'articleBtn';
+    toggleShowControlAreaBtn.addEventListener('click', 
+        toggleShowControlArea);
+    document.getElementById('articleNav').
+        appendChild(toggleShowControlAreaBtn);
+    // Update controls area itself (defined in HTML)
+    const controlsArea = document.getElementById('controlsBox');
+    controlsArea.className = 'controlsBox';
+    controlsArea.style.display = 'block'; //TODO: Change to none
+    const ManifestoControls = new ControlBox(controlsArea);
+    ManifestoControls.init();
 }
 
 // Default Display
@@ -137,6 +152,16 @@ function toggleShowEditBtns() {
         } else {
             b.style.display = 'none';
         }
+    }
+}
+
+function toggleShowControlArea() {
+    const controlsArea = document.getElementById('controlsBox');
+    let displayProp = controlsArea.style.display;
+    if (displayProp === 'none') {
+        controlsArea.style.display = 'block';
+    } else {
+        controlsArea.style.display = 'none';
     }
 }
 

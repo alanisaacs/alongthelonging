@@ -211,6 +211,12 @@ button:active {
 	padding: 1px 6px;
 }
 
+.controlsBox {
+	background-color: orange;
+	display: block;
+	height: 4rem;
+}
+
 .collectionBox {
     padding: 10px;
 }
