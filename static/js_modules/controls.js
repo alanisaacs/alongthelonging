@@ -6,7 +6,15 @@ class ControlBox {
     }
 
     init() {
-        this.controlsBox.innerHTML = 'Controls go here';
+        const instructionBox = document.createElement('div');
+        instructionBox.innerHTML = "Use these filters to determine " +
+            "which items of the Manifesto are displayed.";
+        this.controlsBox.appendChild(instructionBox);
+        this.displayDefault();
+    }
+
+    displayDefault() {
+        
     }
 }
 

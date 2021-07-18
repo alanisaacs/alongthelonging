@@ -2,19 +2,29 @@
 
 {% block content %}
 
-<div class=bar_header>Poetic Manifesto</div>
+<header id=mainHeader>
+	<h1>Poetic Manifesto</h1>
+</header>
 
-<div class=article id=article>
-    <div class=articleIntro>
-        It is what is it.
-    </div>
-    <div class=articleNav id=articleNav>
-        <button class='articleBtn' id='toggleShowAllNotes'>
-            Show/Hide All Notes</button>
-    </div>
-	<div id='controlsBox'></div>
-    <div id='maniBox'></div>
-</div>
+<article>
+	<div id=article>
+		<!-- TODO: these "article" names either use generic
+			styles or be application specific -->
+		<div class=articleIntro>
+			It is what is it.
+		</div>
+		<div class=articleNav id=articleNav>
+			<button class='articleBtn' id='toggleShowAllNotes'>
+				Show/Hide All Notes</button>
+		</div>
+	
+		<!-- CURRENTLY HIDDEN IN JAVASCRIPT-->
+		<div id='controlsBox'></div>
+	
+		<div id='maniBox'></div>
+	</div>
+</article>
+
 _
 <p><em>Version 2.0.1, 2021.04.20</em></p>
 

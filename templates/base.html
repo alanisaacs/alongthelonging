@@ -11,6 +11,8 @@
         href="{{ url_for('static', filename='styles_all.css') }}">
     <link rel="stylesheet" 
         href="{{ url_for('static', filename='styles_atl.css') }}">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css?family=Spectral|Libre+Baskerville|Open+Sans">
 	<script src=
         "{{ url_for('static', filename='scripts_all.js') }}"></script>
 	<script type="module" src=
@@ -18,61 +20,65 @@
 </head>
 
 <body>
-    <div id="body_wrap">
-        <header id="main_header">
-            <div id="main_title">
-               Along the Longing
-            </div>
-            <nav id="nav_bar">
-                <div class="nav_item">
-                    <a href="http://exultoshores.com">EOS</a>
-                </div>
-                <div class="nav_item">
-                    <a href="/">Home</a>
-                </div>
-                <div class="nav_item">
-                    <a href="/aphorisms">Aphorisms</a>
-                </div>
-                <div class="nav_item">
-                    <a href="/engine">Engine</a>
-                </div>
-                <div class="nav_item">
-                    <a href="/manifesto">Manifesto</a>
-                </div>
-                <div class="nav_item">
-                    <a href="/poems">Poems</a>
-                </div>
-                <div class="nav_item">
-                    <a href="/about">About</a>
-                </div>
+    <div id="bodyWrap">
+        <header id="siteTitle">Along the Longing</header>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="http://exultoshores.com">EOS</a>
+                    </li>
+                    <li>
+                        <a href="/">Home</a>
+                    </li>
+                    <li>
+                        <a href="/aphorisms">Aphorisms</a>
+                    </li>
+                    <li>
+                        <a href="/engine">Engines</a>
+                    </li>
+                    <li>
+                        <a href="/manifesto">Manifesto</a>
+                    </li>
+                    <li>
+                        <a href="/poems">Poems</a>
+                    </li>
+                    <li>
+                        <a href="/about">About</a>
+                    </li>
                 {% if current_user.is_authenticated %}
-                Welcome {{ current_user.username }}!
-                    <div class="nav_item">
+                    <li>
+                        Welcome {{ current_user.username }}!
+                    </li>
+                    <li>
                         <a href="/logout">Log Out</a>
-                    </div>
+                    </li>
                     {% else %}
-                    <div class="nav_item">
+                    <li>
                         <a href="/login">Log In</a>
-                    </div>
+                    </li>
                 {% endif %}
-        </header>
+            </ul>
+        </nav>
 
-        <section id="main_section">
-            <div class="flash_messages">
-                {% with messages = get_flashed_messages(with_categories=true) %}
-                    {% if messages %}
-                        {% for category, message in messages %}
-                            <div class="{{ category }}">{{ message }}</div>
-                        {% endfor %}
-                    {% endif %}
-                {% endwith %}
-            </div>
-            {% block content %}
-            {% endblock %}
+        <section id=notifications>
+            {% with messages = get_flashed_messages(with_categories=true) %}
+                {% if messages %}
+                    {% for category, message in messages %}
+                        <div class="{{ category }}">{{ message }}</div>
+                    {% endfor %}
+                {% endif %}
+            {% endwith %}
         </section>
 
-        <footer id="main_footer">
-			<script>show_footer()</script>
+        <main>
+            
+            {% block content %}
+            {% endblock %}
+            
+        </main>
+
+        <footer id="pageFooter">
+			<script>showPageFooter()</script>
         </footer>
     </div>
 

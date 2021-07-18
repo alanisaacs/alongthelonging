@@ -21,17 +21,18 @@ function initManifesto() {
         document.getElementById('articleNav').appendChild(btn);
     }
     // Add button to open controls area
-    const toggleShowControlAreaBtn = document.createElement('button');
-    toggleShowControlAreaBtn.innerText = 'Show/Hide Filters';
-    toggleShowControlAreaBtn.className = 'articleBtn';
-    toggleShowControlAreaBtn.addEventListener('click', 
-        toggleShowControlArea);
-    document.getElementById('articleNav').
-        appendChild(toggleShowControlAreaBtn);
-    // Update controls area itself (defined in HTML)
+    // TODO: RE-ENABLE
+    // const toggleShowControlAreaBtn = document.createElement('button');
+    // toggleShowControlAreaBtn.innerText = 'Show/Hide Filters';
+    // toggleShowControlAreaBtn.className = 'articleBtn';
+    // toggleShowControlAreaBtn.addEventListener('click', 
+    //     toggleShowControlArea);
+    // document.getElementById('articleNav').
+    //     appendChild(toggleShowControlAreaBtn);
+    // Update controls area itself (container DIV defined in HTML)
     const controlsArea = document.getElementById('controlsBox');
     controlsArea.className = 'controlsBox';
-    controlsArea.style.display = 'block'; //TODO: Change to none
+    controlsArea.style.display = 'none'; //DEV MODE: USE BLOCK
     const ManifestoControls = new ControlBox(controlsArea);
     ManifestoControls.init();
 }

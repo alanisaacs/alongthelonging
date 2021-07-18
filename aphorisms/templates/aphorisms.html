@@ -2,27 +2,35 @@
 
 {% block content %}
 
-<div class=bar_header>Aphorisms for the Neurodivergent</div>
-<div class=article>
-	<div class=explainer>
-		<p>These are sayings I say to myself<br>
-		in order to calm and center my consciousness<br>
-		especially during episodes of anxiety or withdrawal</p>
-    </div>
+<header id=mainHeader>
+	<h1>Aphorisms for the Neurodivergent</h1>
+</header>
 
-	<div class=bar_action>
-		<button id="my_favorite_flow">My Favorite Flow</button> 
-		<button id="random_one">Random One</button>
-		<button id="one_set">Random Category</button>
-		<button id="all_by_category">All by Category</button> 
-		<p>Choose a Category:
-			<button id=select_set></button>
-		</p>
+<article>
+
+	<div class=aphoWrap>
+
+		<div class=explainer>
+			<p>These are sayings I say to myself<br>
+			in order to calm and center my consciousness<br>
+			especially during episodes of anxiety or withdrawal</p>
+		</div>
+
+		<div class=bar_action>
+			<button id="my_favorite_flow">My Favorite Flow</button> 
+			<button id="random_one">Random One</button>
+			<button id="one_set">Random Category</button>
+			<button id="all_by_category">All by Category</button> 
+			<p>Choose a Category:
+				<button id=select_set></button>
+			</p>
+		</div>
+
+		<div id="displaybox"></div>
+
 	</div>
-
-	<div id="displaybox"></div>
-
-</div> <!--This ends the article div-->
+	
+</article>
 
 <script>
 	// Write data into array of objects attached to displaybox

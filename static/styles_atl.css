@@ -10,22 +10,6 @@
 	--nav-item-hover-color: #ff6347;
 }
 
-/* ======= Media Rules ======= */
-
-@media (min-width): 500px {
-	body {
-		background-color: blue;
-	}
-}
-
-/* ======= Site Background Color ======= */
-
-body {
-	/* Extend background color to entire canvas */
-	/* background-color: #ffff70; */
-	background-color: var(--body-background-color);
-}
-
 /* ======= Page Layout ======= */
 
 td {
@@ -33,62 +17,35 @@ td {
 	vertical-align: top;
 }
 
-/* ======= Title and nav bar ======= */
-
-#main_title {
-	color: var(--main-title-color);
-}
-
-.nav_item a {
-	color: var(--nav-item-color);
-}
-
-.nav_item a:hover {
-	color: var(--nav-item-hover-color);
-}
-
-/* ======= Subheaders ======= */
-
-/* extends styles_all.css */
-.bar_header {
-	font-size: 1.75em;
-	margin-top: 30px;
-}
-
 /* Home Page */
 
-.atl_home {
+.atlHome {
 	text-align: center;
 	margin: 100px;
 }
 
 /* Endnotes */
 
-.endnotes {
-	color: #991414;
-	border-top: 1px solid black;
-	margin: 3em 0em;
-	font-style: italic;
-}
 
-/* Article Defaults */
 
-.article {
+/* Aphorisms */
+
+.aphoWrap {
 	/* overwrites styles_all.css */
 	padding: 1rem 10% 1rem;
 }
 
-.article h1 {
+.aphoWrap h1 {
 	font-size: 3em;
 	margin-left: 1rem;
 }
 
-.article h2 {
+.aphoWrap h2 {
 	font-size: 2em;
 	margin-left: .5rem;
 }
 
-.article h3 {
+.aphoWrap h3 {
 	color: var(--nav-item-color);
 	font-size: 1.25em;
 	margin-left: .5rem;
@@ -100,7 +57,7 @@ td {
 	margin-right: 4rem;
 }
 
-.article h4 {
+.aphoWrap h4 {
 	font-weight: bold;
 } 
 
@@ -133,6 +90,13 @@ td {
 
 .ti-3 {
 	text-indent: 12rem;
+}
+
+.endnotes {
+	color: #991414;
+	border-top: 1px solid black;
+	margin: 3em 0em;
+	font-style: italic;
 }
 
 /* Aphorism Specifics */
@@ -214,7 +178,7 @@ button:active {
 .controlsBox {
 	background-color: orange;
 	display: block;
-	height: 4rem;
+	padding: 1rem;
 }
 
 .collectionBox {
