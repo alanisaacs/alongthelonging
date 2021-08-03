@@ -21,7 +21,7 @@ td {
 
 .atlHome {
 	text-align: center;
-	margin: 100px;
+	margin: 80px 20px;
 }
 
 /* Endnotes */
@@ -157,9 +157,7 @@ button:active {
 /* ======= Manifesto ======= */
 /* Copied from tfb for now */
 
-.articleIntro {
-    padding: .5rem;
-}
+
 
 .articleNav {
     margin-bottom: 1.5rem;
@@ -293,4 +291,10 @@ button:active {
 .showHideBtnBar {
     margin-bottom: 1.5rem;
     margin-right: 3rem;
+}
+
+/* REMOVE WHEN NO LONGER IS USE */
+
+.articleIntro {
+    padding: .5rem;
 }
