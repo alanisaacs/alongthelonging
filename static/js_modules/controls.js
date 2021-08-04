@@ -62,10 +62,10 @@ class ControlArea {
         let displayProp = controlArea.style.display;
         if (displayProp === 'none') {
             controlArea.style.display = 'block';
-            toggleShowAllNotesBtn.innerText === 'Hide Controls'
+            toggleShowAllNotesBtn.innerText = 'Hide Controls'
         } else {
             controlArea.style.display = 'none';
-            toggleShowAllNotesBtn.innerText === 'Show Controls'
+            toggleShowAllNotesBtn.innerText = 'Show Controls'
         }
     }
 
