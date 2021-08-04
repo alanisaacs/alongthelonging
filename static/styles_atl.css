@@ -126,30 +126,6 @@ td {
 	padding: .5rem 1em;
 }
 
-/* ======= site buttons ======= */
-
-button {
-	background-color: var(--body-background-color);
-	border: 2px solid var(--nav-item-color);
-	border-radius: 7px;
-	color: var(--nav-item-color); 
-	cursor: pointer;
-	display: inline-block;
-	margin: 2px;
-	padding: 6px 6px;
-	text-align: center;
-	text-decoration: none;
-}
-
-button:hover {
-	background-color: #cefdce;
-}
-
-button:active {
-	background-color: #85fa85;
-	color: plum;
-}
-
 .setselector {
 	background-color: var(--body-background-color);
 	color: var(--nav-item-color);
@@ -254,7 +230,7 @@ button:active {
     padding-right: 1.5rem;
 }
 
-.showHideButton {
+.showNotesBtn {
 	border: 1px solid var(--dark-zone-color);
 	color: var(--dark-zone-color);
     float: right;

@@ -8,16 +8,15 @@ class ControlArea {
 
     init() {
         // Add div with button to toggle control box open/closed 
-        const toggleShowCtrlBoxBtnWrap = document.createElement('div');
-        toggleShowCtrlBoxBtnWrap.className = 'controlBtnWrap';
-        this.controlWrap.appendChild(toggleShowCtrlBoxBtnWrap);
-        const toggleShowCtrlBoxBtn = document.createElement('button');
-        toggleShowCtrlBoxBtn.id = 'toggleShowCtrlBoxBtn';
-        toggleShowCtrlBoxBtn.className = 'controlBtn';
-        toggleShowCtrlBoxBtn.innerText = 'Show Controls';
-        toggleShowCtrlBoxBtn.addEventListener('click',
+        const showControlBoxBtnWrap = document.createElement('div');
+        showControlBoxBtnWrap.className = 'controlBtnWrap';
+        this.controlWrap.appendChild(showControlBoxBtnWrap);
+        const showControlBoxBtn = document.createElement('button');
+        showControlBoxBtn.id = 'showControlBoxBtn';
+        showControlBoxBtn.innerText = 'Show Controls';
+        showControlBoxBtn.addEventListener('click',
             this.toggleShowControlBox);
-        toggleShowCtrlBoxBtnWrap.appendChild(toggleShowCtrlBoxBtn);
+        showControlBoxBtnWrap.appendChild(showControlBoxBtn);
         // Add control box where controls will live
         const controlBox = document.createElement('div');
         controlBox.id = 'controlBox';
@@ -33,51 +32,51 @@ class ControlArea {
         controlTray.className = 'controlTray';
         controlBox.appendChild(controlTray);
         // Add button to toggle showing/hiding all the notes
-        const toggleShowAllNotesBtn = document.createElement('button');
-        toggleShowAllNotesBtn.id = 'toggleShowAllNotesBtn';
-        toggleShowAllNotesBtn.className = 'controlBtn';
-        toggleShowAllNotesBtn.innerText = 'Show All Notes';
-        toggleShowAllNotesBtn.addEventListener(
+        const showAllNotesBtn = document.createElement('button');
+        showAllNotesBtn.id = 'showAllNotesBtn';
+        showAllNotesBtn.className = 'controlBtn';
+        showAllNotesBtn.innerText = 'Show All Notes';
+        showAllNotesBtn.addEventListener(
             'click', this.toggleShowAllNotes);
-        controlTray.appendChild(toggleShowAllNotesBtn);
+        controlTray.appendChild(showAllNotesBtn);
         // If user is authenticated, add button to show edit buttons
         if (maniBox.authStatus.editOK) {
-            const toggleShowEditBtn = document.createElement('button');
-            toggleShowEditBtn.id = 'toggleShowEditBtn';
-            toggleShowEditBtn.className = 'controlBtn';
-            toggleShowEditBtn.style.backgroundColor = 'lightskyblue';
-            toggleShowEditBtn.innerText = 'Hide Edit Buttons';
-            toggleShowEditBtn.addEventListener('click', 
+            const showEditBtnsBtn = document.createElement('button');
+            showEditBtnsBtn.id = 'showEditBtnsBtn';
+            showEditBtnsBtn.className = 'controlBtn';
+            showEditBtnsBtn.style.backgroundColor = 'lightskyblue';
+            showEditBtnsBtn.innerText = 'Hide Edit Buttons';
+            showEditBtnsBtn.addEventListener('click', 
                 this.toggleShowEditBtns);
-            controlTray.appendChild(toggleShowEditBtn);
+            controlTray.appendChild(showEditBtnsBtn);
         }
         // Hide control box by default
         controlBox.style.display = 'none';
     }
 
     toggleShowControlBox() {
-        const toggleShowCtrlBoxBtn = document.
-            getElementById('toggleShowCtrlBoxBtn');
+        const showControlBoxBtn = document.
+            getElementById('showControlBoxBtn');
         const controlArea = document.getElementById('controlBox');
         let displayProp = controlArea.style.display;
         if (displayProp === 'none') {
             controlArea.style.display = 'block';
-            toggleShowCtrlBoxBtn.innerText = 'Hide Controls'
+            showControlBoxBtn.innerText = 'Hide Controls'
         } else {
             controlArea.style.display = 'none';
-            toggleShowCtrlBoxBtn.innerText = 'Show Controls'
+            showControlBoxBtn.innerText = 'Show Controls'
         }
     }
 
     toggleShowAllNotes() {
-        const toggleShowAllNotesBtn = document.
-            getElementById('toggleShowAllNotesBtn');
+        const showAllNotesBtn = document.
+            getElementById('showAllNotesBtn');
         let notesAreHidden = true;
-        if (toggleShowAllNotesBtn.innerText === 'Show All Notes') {
-            toggleShowAllNotesBtn.innerText = 'Hide All Notes';
+        if (showAllNotesBtn.innerText === 'Show All Notes') {
+            showAllNotesBtn.innerText = 'Hide All Notes';
         } else {
             notesAreHidden = false;
-            toggleShowAllNotesBtn.innerText = 'Show All Notes';
+            showAllNotesBtn.innerText = 'Show All Notes';
         }
         const notes = document.querySelectorAll('.notesBox');
         // let isHidden = notes[0].getAttribute('hidden');
@@ -94,12 +93,12 @@ class ControlArea {
     }
 
     toggleShowEditBtns() {
-        const toggleShowEditBtn = document.
-            getElementById('toggleShowEditBtn');
-        if (toggleShowEditBtn.innerText === 'Show Edit Buttons') {
-            toggleShowEditBtn.innerText = 'Hide Edit Buttons';
+        const showEditBtnsBtn = document.
+            getElementById('showEditBtnsBtn');
+        if (showEditBtnsBtn.innerText === 'Show Edit Buttons') {
+            showEditBtnsBtn.innerText = 'Hide Edit Buttons';
         } else {
-            toggleShowEditBtn.innerText = 'Show Edit Buttons';
+            showEditBtnsBtn.innerText = 'Show Edit Buttons';
         }
         const editBars = document.querySelectorAll('.editBar');
         let displayProp = editBars[0].style.display;

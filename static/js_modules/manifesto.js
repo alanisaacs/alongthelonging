@@ -83,7 +83,7 @@ function createShowHideBtnBar(ele) {
     const btnBar = document.createElement('div');
     btnBar.className = 'showHideBtnBar';
     const showHideBtn = document.createElement('button');
-    showHideBtn.className = 'showHideButton';
+    showHideBtn.className = 'showNotesBtn';
     // Event for handling clicks on the visibility toggle
     showHideBtn.addEventListener('click', 
     ev => {
