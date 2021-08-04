@@ -155,32 +155,9 @@ button:active {
 }
 
 /* ======= Manifesto ======= */
-/* Copied from tfb for now */
-
-
-
-.articleNav {
-    margin-bottom: 1.5rem;
-    padding: .5rem;
-}
-
-.articleBtn {
-	border: 1px solid #727272;
-	color: #555555;
-    float: right;
-    margin-left: 1rem;
-	font-size: small;
-	padding: 1px 6px;
-}
-
-.controlsBox {
-	background-color: orange;
-	display: block;
-	padding: 1rem;
-}
 
 .collectionBox {
-    padding: 10px;
+    padding: 10px 0px;
 }
 
 .editMode {
@@ -237,7 +214,7 @@ button:active {
     border-top: 1px solid black;
     font-size: x-large;
     font-weight: bold;
-    padding: 1rem;
+    padding: 1rem .5rem;
 }
 
 .soundbiteBox {
@@ -249,26 +226,24 @@ button:active {
 .itemDesc {
     font-size: medium;
     font-weight: normal;
-    padding-top: .5rem;
-    padding-bottom: .5rem;
-    padding-left: 2rem;
+	padding: .5rem 0rem;
 }
 
 .itemNotes {
     font-size: medium;
     font-weight: normal;
-    padding: 1rem 2rem;
+    padding: 1rem;
 }
 
 .notesBox {
-    border: 1px solid darkred;
-    margin: 1rem 3rem;
+    border: 1px solid #999999;
+    margin: 1rem;
 }
 
 .notesBar {
-    background-color: darkred;
+    background-color: #999999;
     color: white;
-    font-size: medium;
+    font-size: small;
     padding-top: .25rem;
     padding-bottom: .25rem;
     padding-left: 1rem;

@@ -2,39 +2,17 @@
 
 import { EditElement } from "./editElement.js";
 import { markupForDisplay } from "./markups.js";
-import { ControlBox } from "./controls.js";
+import { ControlArea } from "./controls.js";
 
 function initManifesto() {
     // Code required to load page, called from main.js
+    // Display the Controls (controlBox div written in html)
+    const controlWrapper = document.getElementById('controlWrap');
+    const ManifestoControls = new ControlArea(controlWrapper);
+    ManifestoControls.init();
+    // Display the manifesto items
     const maniBox = document.getElementById('maniBox');
     displayDefault(maniBox.manis);
-    // Add listeners to buttons on the page
-    document.getElementById('toggleShowAllNotes').addEventListener(
-        'click', toggleShowAllNotes);
-    // If user is authenticated, show button to show/hide edit buttons
-    if (maniBox.authStatus.editOK) {
-        const btn = document.createElement('button');
-        btn.className = 'articleBtn';
-        btn.style.backgroundColor = 'lightskyblue';
-        btn.innerText = 'Edit Buttons';
-        btn.addEventListener('click', toggleShowEditBtns);
-        document.getElementById('articleNav').appendChild(btn);
-    }
-    // Add button to open controls area
-    // TODO: RE-ENABLE
-    // const toggleShowControlAreaBtn = document.createElement('button');
-    // toggleShowControlAreaBtn.innerText = 'Show/Hide Filters';
-    // toggleShowControlAreaBtn.className = 'articleBtn';
-    // toggleShowControlAreaBtn.addEventListener('click', 
-    //     toggleShowControlArea);
-    // document.getElementById('articleNav').
-    //     appendChild(toggleShowControlAreaBtn);
-    // Update controls area itself (container DIV defined in HTML)
-    const controlsArea = document.getElementById('controlsBox');
-    controlsArea.className = 'controlsBox';
-    controlsArea.style.display = 'none'; //DEV MODE: USE BLOCK
-    const ManifestoControls = new ControlBox(controlsArea);
-    ManifestoControls.init();
 }
 
 // Default Display
@@ -111,7 +89,7 @@ function createShowHideBtnBar(ele) {
     ev => {
         toggleVisibility(ele);
         if (showHideBtn.innerText == 'Show Notes') {
-            showHideBtn.innerText = 'Hide';
+            showHideBtn.innerText = 'Hide Notes';
         } else {
             showHideBtn.innerText = 'Show Notes';
         }
@@ -126,43 +104,6 @@ function toggleVisibility(ele) {
         ele.removeAttribute('hidden');
     } else {
         ele.setAttribute('hidden', true);
-    }
-}
-
-function toggleShowAllNotes() {
-    const notes = document.querySelectorAll('.notesBox');
-    let isHidden = notes[0].getAttribute('hidden');
-    for (let n of notes) {
-        let showHideBtn = n.previousElementSibling.children[0];
-        if (isHidden) {
-            showHideBtn.innerText = 'Hide';
-            n.removeAttribute('hidden');
-        } else {
-            showHideBtn.innerText = 'Show Notes';
-            n.setAttribute('hidden', true);
-        }
-    }
-}
-
-function toggleShowEditBtns() {
-    const editBars = document.querySelectorAll('.editBar');
-    let displayProp = editBars[0].style.display;
-    for (let b of editBars) {
-        if (displayProp === 'none' ) {
-            b.style.display = 'inline-block';
-        } else {
-            b.style.display = 'none';
-        }
-    }
-}
-
-function toggleShowControlArea() {
-    const controlsArea = document.getElementById('controlsBox');
-    let displayProp = controlsArea.style.display;
-    if (displayProp === 'none') {
-        controlsArea.style.display = 'block';
-    } else {
-        controlsArea.style.display = 'none';
     }
 }
 
