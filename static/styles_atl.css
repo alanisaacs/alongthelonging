@@ -8,6 +8,7 @@
 	--main-title-color: #560875;
 	--nav-item-color: #991414;
 	--nav-item-hover-color: #ff6347;
+	--dark-zone-color: #89738c;
 }
 
 /* ======= Page Layout ======= */
@@ -241,8 +242,8 @@ button:active {
 }
 
 .notesBar {
-    background-color: #999999;
-    color: white;
+    background-color: var(--dark-zone-color);
+    color: honeydew;
     font-size: small;
     padding-top: .25rem;
     padding-bottom: .25rem;
@@ -254,8 +255,8 @@ button:active {
 }
 
 .showHideButton {
-	border: 1px solid #727272;
-	color: #555555;
+	border: 1px solid var(--dark-zone-color);
+	color: var(--dark-zone-color);
     float: right;
     font-size: x-small;
 	padding: 1px 6px;
