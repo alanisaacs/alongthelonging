@@ -56,16 +56,16 @@ class ControlArea {
     }
 
     toggleShowControlBox() {
-        const toggleShowAllNotesBtn = document.
-            getElementById('toggleShowAllNotesBtn');
+        const toggleShowCtrlBoxBtn = document.
+            getElementById('toggleShowCtrlBoxBtn');
         const controlArea = document.getElementById('controlBox');
         let displayProp = controlArea.style.display;
         if (displayProp === 'none') {
             controlArea.style.display = 'block';
-            toggleShowAllNotesBtn.innerText = 'Hide Controls'
+            toggleShowCtrlBoxBtn.innerText = 'Hide Controls'
         } else {
             controlArea.style.display = 'none';
-            toggleShowAllNotesBtn.innerText = 'Show Controls'
+            toggleShowCtrlBoxBtn.innerText = 'Show Controls'
         }
     }
 
