@@ -9,6 +9,8 @@
 	--nav-item-color: #991414;
 	--nav-item-hover-color: #ff6347;
 	--dark-zone-color: #89738c;
+	--btn-background-color: #ccffe6;
+	--btn-color: #443535;
 }
 
 /* ======= Page Layout ======= */
@@ -128,7 +130,7 @@ td {
 
 .setselector {
 	background-color: var(--body-background-color);
-	color: var(--nav-item-color);
+	color: var(--btn-color);
 }
 
 /* ======= Manifesto ======= */
