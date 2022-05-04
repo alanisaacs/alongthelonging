@@ -1,7 +1,7 @@
 {
 	"aphorisms": [
 		{
-			"id": 1,
+			"id": 10,
 			"set": "awareness",
 			"view": "flow",
 			"contents": "<p>&nbsp;</p><h4>STOP</h4>",
@@ -9,7 +9,7 @@
 			"endnote": ""
 		},
 		{
-			"id": 2,
+			"id": 20,
 			"set": "awareness",
 			"view": "flow",
 			"contents": "<p>sit quietly</p>",
@@ -17,7 +17,7 @@
 			"endnote": ""
 		},
 		{
-			"id": 3,
+			"id": 30,
 			"set": "awareness",
 			"view": "flow",
 			"contents": "<p class=ti-1>ask for openness</p>",
@@ -25,7 +25,7 @@
 			"endnote": ""
 		},
 		{
-			"id": 4,
+			"id": 40,
 			"set": "feeling",
 			"view": "",
 			"contents": "<p>your job is to feel</p>",
@@ -33,7 +33,7 @@
 			"endnote": ""
 		},
 		{
-			"id": 5, 
+			"id": 50, 
 			"set": "awareness",
 			"view": "flow",
 			"contents": "<p class=ti-1>learn from breathing</p>",
@@ -41,7 +41,7 @@
 			"endnote": ""
 		},
 		{
-			"id": 6,
+			"id": 60,
 			"set": "awareness",
 			"view": "flow",
 			"contents": "<p>letting out is letting go, of thinking</p>",
@@ -49,7 +49,7 @@
 			"endnote": ""
 		},
 		{
-			"id": 7,
+			"id": 70,
 			"set": "awareness",
 			"view": "flow",
 			"contents": "<p>all things pass even to die</p>",
@@ -57,7 +57,7 @@
 			"endnote": ""
 		},
 		{
-			"id": 8,
+			"id": 80,
 			"set": "awareness",
 			"view": "flow",
 			"contents": "<p>time slows</p><p class=ti-1>to the space of a breath</p>",
@@ -65,7 +65,7 @@
 			"endnote": "<p>&ldquo;Awareness, Acceptance, and Action&rdquo; are known as the Three A&lsquo;s in twelve-step programs</p>"
 		},
 		{
-			"id": 10,
+			"id": 100,
 			"set": "acceptance",
 			"view": "flow",
 			"contents": "<p>the best I can do</p><p>is to take care of myself</p><p>at my worst</p>",
@@ -73,7 +73,7 @@
 			"endnote": ""
 		},
 		{
-			"id": 11,
+			"id": 110,
 			"set": "acceptance",
 			"view": "flow",
 			"contents": "<p>if all I can do</p><p class=ti-1>is to sit</p><p class=ti-1>lost in confusion</p><p class=ti-2>then so be it</p>",
@@ -81,7 +81,7 @@
 			"endnote": ""
 		},
 		{
-			"id": 14,
+			"id": 140,
 			"set": "action",
 			"view": "flow",
 			"contents": "<p>perform healing tasks</p><p>however small</p>",
@@ -89,7 +89,7 @@
 			"endnote": ""
 		},
 		{
-			"id": 15,
+			"id": 150,
 			"set": "action",
 			"view": "flow",
 			"contents": "<p>experience</p><p class=ti-1>pleasure, relaxation, comfort</p>",
@@ -97,7 +97,7 @@
 			"endnote": ""
 		},
 		{
-			"id": 16,
+			"id": 160,
 			"set": "action",
 			"view": "flow",
 			"contents": "<p>fullfill a longing</p>",
@@ -105,7 +105,7 @@
 			"endnote": ""
 		},
 		{
-			"id": 17,
+			"id": 170,
 			"set": "action",
 			"view": "flow",
 			"contents": "<p>prioritize by doing</p><p>and watching</p><p class=ti-1>what is done</p>",
@@ -113,7 +113,15 @@
 			"endnote": ""
 		},
 		{
-			"id": 18,
+			"id": 175,
+			"set": "openness",
+			"view": "",
+			"contents": "<p>let the truth of life</p><p class=ti-1>pain and joy, horror and beauty</p><p>flow openly</p><p class=ti-1>through and away</p>",
+			"suffix": "",
+			"endnote": ""
+		},
+		{
+			"id": 180,
 			"set": "openness",
 			"view": "",
 			"contents": "<p>expand your center</p><p class=ti-1><p>until it encompasses all</p>",
@@ -121,7 +129,7 @@
 			"endnote": ""
 		},
 		{
-			"id": 19,
+			"id": 190,
 			"set": "feeling",
 			"view": "",
 			"contents": "<p>if there is pain or fear</p><p class=ti-1>&ldquo;Bring It On&rdquo;</p><p class=ti-1>&ldquo;I love pain&rdquo;</p><p class=ti-1>&ldquo;Pain sets me free&rdquo;</p>",
@@ -129,7 +137,15 @@
 			"endnote": "<p>&ldquo;Bring It On,&rdquo; &ldquo;I love pain,&rdquo; and &ldquo;Pain sets me free&rdquo; come from The Tools by Phil Stutz and Barry Michels</p>"
 		},
 		{
-			"id": 20,
+			"id": 195,
+			"set": "feeling",
+			"view": "",
+			"contents": "<p>surrender</p><p class=ti-1>to all the pain and shame and rage</p><p class=ti-1>let it flow through</p><p class=ti-2>in the same stream as wonder and joy</p>",
+			"suffix": "",
+			"endnote": ""
+		},
+		{
+			"id": 200,
 			"set": "wrongness",
 			"view": "",
 			"contents": "<p>Can you live in the world</p><p class=ti-1>where nothing is wrong?</p>",
@@ -137,7 +153,7 @@
 			"endnote": ""
 		},
 		{
-			"id": 21,
+			"id": 210,
 			"set": "wrongness",
 			"view": "",
 			"contents": "<p>when everything feels wrong</p><p class=ti-1>it is a judgment-mechanism</p><p class=ti-2>it is not part of you</p>",
@@ -145,7 +161,7 @@
 			"endnote": ""
 		},
 	{
-			"id": 23,
+			"id": 230,
 			"set": "compassion",
 			"view": "",
 			"contents": "<p>feel the pain</p><p class=ti-1>that is the way to compassion</p>",
@@ -153,7 +169,7 @@
 			"endnote": ""
 		},
 		{
-			"id": 22,
+			"id": 220,
 			"set": "feeling",
 			"view": "",
 			"contents": "<p>when it hurts to decide between the virulent possibilities</p><p class=ti-1>do nothing</p>",
@@ -161,15 +177,23 @@
 			"endnote": ""
 		},
 		{
-			"id":25,
+			"id":250,
 			"set": "compassion",
 			"view": "",
 			"contents": "<p>hold yourself in sympathy</p><p class=ti-1>ask for help</p>",
 			"suffix": "",
 			"endnote": ""
+		},	
+		{
+			"id":255,
+			"set": "compassion",
+			"view": "",
+			"contents": "<p>I am so sorry</p><p class=ti-1>for how hard it is</p><p class=ti-1>for all the suffering</p><p class=ti-2>the inescapable suffering</p>",
+			"suffix": "",
+			"endnote": ""
 		},		
 		{
-			"id": 27,
+			"id": 270,
 			"set": "slow",
 			"view": "",
 			"contents": "<p>slow down</p>",
@@ -177,7 +201,7 @@
 			"endnote": ""
 		},
 		{
-			"id":52,
+			"id":520,
 			"set": "slow",
 			"view": "",
 			"contents": "<p>I'm in no hurry</p><p class=ti-1>I have no future projection</p>",
@@ -185,7 +209,7 @@
 			"endnote": ""
 		}, 
 		{
-			"id": 39,
+			"id": 390,
 			"set": "slow",
 			"view": "",
 			"contents": "<p>take time to heal</p>",
@@ -193,7 +217,7 @@
 			"endnote": ""
 		}, 
 		{
-			"id":29,
+			"id":290,
 			"set": "feeling",
 			"view": "",
 			"contents": "<p>honor suffering</p><p>when experience is suffering</p><p class=ti-1>it is not forever</p>",
@@ -201,7 +225,7 @@
 			"endnote": ""
 		},
 		{
-			"id":30,
+			"id":300,
 			"set": "shame",
 			"view": "",
 			"contents": "<p>look under shame</p><p class=ti-1>and anxiety</p><p>there is pain there</p>",
@@ -209,7 +233,7 @@
 			"endnote": ""
 		},
 		{
-			"id":31,
+			"id":310,
 			"set": "openness",
 			"view": "",
 					"contents": "<p>don't decide the little choices</p><p class=ti-1>let them happen on their own</p><p class=ti-2>let go of control</p><p class=ti-1>let the decisions come to you</p>",
@@ -217,7 +241,7 @@
 			"endnote": ""
 		},
 		{
-			"id":32,
+			"id":320,
 			"set": "openness",
 			"view": "",
 			"contents": "<p>anxiety doesn't serve you</p><p class=ti-1>it shuts off your connections</p><p class=ti-1>so give way and feel under</p>",
@@ -225,7 +249,7 @@
 			"endnote": ""
 		},
 		{
-			"id":33,
+			"id":330,
 			"set": "slow",
 			"view": "",
 			"contents": "<p>turn off the clocks</p>",
@@ -233,7 +257,7 @@
 			"endnote": ""
 		},
 		{
-			"id":41,
+			"id":410,
 			"set": "presence",
 			"view": "",
 			"contents": "<p>my higher power is the endless now</p>",
@@ -241,7 +265,7 @@
 			"endnote": ""
 		},
 		{
-			"id":35,
+			"id":350,
 			"set": "feeling",
 			"view": "",
 			"contents": "<p>it's okay to feel bad</p><p class=ti-1>or weak or wrong</p><p class=ti-2>or small</p>",
@@ -249,7 +273,7 @@
 			"endnote": ""
 		},
 		{
-			"id":36,
+			"id":360,
 			"set": "compassion",
 			"view": "",
 			"contents": "<p>don't try to fix it</p><p>letting go leads</p><p class=ti-1>to well-being in the moment</p>",
@@ -257,21 +281,21 @@
 			"endnote": ""
 		},
 		{
-			"id":37,
+			"id":370,
 			"set": "wrongness",
 			"view": "",
 			"contents": "<p>I'm not doing anything wrong</p><p class=ti-1>everything (I could do)</p><p class=ti-1>is already correct</p>",
 			"endnote": ""
 		},
 		{
-			"id":38,
+			"id":380,
 			"set": "shame",
 			"view": "",
 			"contents": "<p>hiding from the world</p><p class=ti-1>is sometimes healing</p>",
 			"endnote": ""
 		},
 		{
-			"id":40,
+			"id":400,
 			"set": "wrongness",
 			"view": "",
 			"contents": "<p>every moment is exactly perfect</p><p>including those when you feel</p><p class=ti-1>only fear, shame, hyper-vigilance</p><p>use that knowledge to feel under the fear</p><p class=ti-1>and let go</p><p class=ti-1>still perfect</p><p class=ti-2>regardless of result</p>",
@@ -279,7 +303,7 @@
 			"endnote": ""
 		},
 		{
-			"id":42,
+			"id":420,
 			"set": "presence",
 			"view": "",
 			"contents": "<p>I cannot force myself to exist</p><p class=ti-1>in the endless now</p><p class=ti-2>... however ...</p><p class=ti-1>it is easy</p>",
@@ -287,7 +311,7 @@
 			"endnote": ""
 		},
 		{
-			"id":26,
+			"id":260,
 			"set": "presence",
 			"view": "",
 			"contents": "<p>take breath</p><p>exhale</p><p class=ti-1>let go all time</p>",
@@ -295,7 +319,7 @@
 			"endnote": ""
 		},
 		{
-			"id":43,
+			"id":430,
 			"set": "openness",
 			"view": "",
 			"contents": "<p>ask for receptivity</p><p class=ti-1>cultivate: &ldquo;Openness Gentleness Kindness&rdquo;</p>",
@@ -303,7 +327,7 @@
 			"endnote": "<p>The refrain &ldquo;Openness Gentleness Kindness&rdquo; comes from Pema Chodron, The Wisdom of No Escape</p>"
 		},
 		{
-			"id":44,
+			"id":440,
 			"set": "shame",
 			"view": "",
 			"contents": "<p>shame is the language of the oppressor</p><p class=ti-1>Resist!</p><p>even if&mdash;especially if&mdash;it's in your own head</p>",
@@ -311,7 +335,7 @@
 			"endnote": ""
 		},
 		{
-			"id":45,
+			"id":450,
 			"set": "presence",
 			"view": "",
 			"contents": "<p>trust in the What</p><p class=ti-1>and the Why will answer itself</p>",
@@ -319,7 +343,7 @@
 			"endnote": ""
 		},
 		{
-			"id": 47,
+			"id": 470,
 			"set": "compassion",
 			"view": "",
 			"contents": "<p>the highest good is taking care of myself</p>",
@@ -327,7 +351,7 @@
 			"endnote": ""
 		},
 		{
-			"id":46,
+			"id":460,
 			"set": "presence",
 			"view": "",
 			"contents": "<p>STOP forcing yourself to do what you should</p><p>DO only that which you want to</p><p class=ti-1>that which gives you pleasure</p>",
@@ -335,7 +359,7 @@
 			"endnote": ""
 		},
 		{
-			"id":48,
+			"id":480,
 			"set": "liberation",
 			"view": "",
 			"contents": "<p>suspend evaluation</p><p class=ti-1>that cacophony of judgment</p>",
@@ -343,14 +367,14 @@
 			"endnote": ""
 		},
 		{
-			"id":49,
+			"id":490,
 			"set": "liberation",
 			"view": "",
 			"contents": "<p>liberation is the feeling</p><p class=ti-1>when all constraints fall away</p><p>and my powers expand</p><p class=ti-1>and proudly burst forth</p>",
 			"suffix": "",
 			"endnote": ""
 		},
-		{	"id":50,
+		{	"id":500,
 			"set": "liberation",
 			"view": "",
 			"contents": "<p>take up space</p>",
@@ -358,7 +382,7 @@
 			"endnote": ""
 		},
 		{
-			"id": 51,
+			"id": 510,
 			"set": "presence",
 			"view": "",
 			"contents": "<p>follow your nose around</p>",
@@ -366,7 +390,7 @@
 			"endnote": ""
 		},
 		{
-			"id": 28,
+			"id": 280,
 			"set": "slow",
 			"view": "",
 			"contents": "<p>you don't have to DO anything</p>",
